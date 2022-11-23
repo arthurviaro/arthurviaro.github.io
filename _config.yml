@@ -55,9 +55,6 @@ bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
 
-# Google Analytics
-google_analytics: G-8H3NDMFCGW
-
 # Social Sharing
 twitter:
   username               : &twitter
@@ -73,12 +70,14 @@ social:
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
 
+# Google Analytics
+google_analytics: G-HXXSRVRRJ0
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : G-8H3NDMFCGW
+    tracking_id          : G-HXXSRVRRJ0
 
 
 # Site Author
