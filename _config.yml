@@ -71,13 +71,13 @@ social:
   links: # An array of links to social media profiles
 
 # Google Analytics
-google_analytics: G-HXXSRVRRJ0
+google_analytics: UA-210306840-1
 
 # Analytics
 analytics:
   provider               : "google-universal" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : G-HXXSRVRRJ0
+    tracking_id          : UA-210306840-1
 
 
 # Site Author
