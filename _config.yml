@@ -50,15 +50,13 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 
 # SEO Related
-google_site_verification : google-site-verification=fk1j2XwyPDnEmXfbRI-ymdS0_9QOCOoD1PYNDf-Idi0
+google_site_verification :
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
 
-enable_google_verification: true  # enables google site verification
-
 # Google Analytics
-google_analytics: G-79VJKYHC0P
+google_analytics: G-8H3NDMFCGW
 
 # Social Sharing
 twitter:
