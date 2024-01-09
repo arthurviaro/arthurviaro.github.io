@@ -10,13 +10,11 @@ redirect_from:
 
 Welcome to my homepage!<br>
 
-I am a part-time professor of Economics at Insper and a Ph.D. candidate at Sao Paulo School of Economics, EESP-FGV.
+I am a part-time professor of Economics at [Insper](https://www.insper.edu.br){:target="_blank"}. My research interests lie at the intersection of Development Economics and Political Economy.
 
-My research interests lie at the intersection of Development Economics and Political Economy.
+Before joining Insper, I completed my Ph.D. in Economics at São Paulo School of Economics (FGV EESP) and received my Master's degree in Economics from the University of São Paulo (FEA USP).
 
-You can check my full CV [here](/files/cv_arthurviaro.pdf).
-
-**Contact:** <arthurav@insper.edu.br>
+You can check my full CV [here](/files/cv_arthurviaro.pdf). Please feel free to contact me via <arthurav@insper.edu.br>. 
 
 <!---
 Site-wide configuration

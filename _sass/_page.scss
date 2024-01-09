@@ -59,6 +59,10 @@
     font-size: 1em;
   }
 
+  p strong a {
+    color: $text-color;
+  }
+
   /* paragraph indents */
   p {
     margin: 0 0 $indent-var;
@@ -73,7 +77,8 @@
   }
 
   a {
-    text-decoration: underline;
+    /*text-decoration: underline;*/
+    text-decoration: none;
 
     &:hover {
       text-decoration: underline;

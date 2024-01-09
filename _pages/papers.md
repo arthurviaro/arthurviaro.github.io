@@ -16,8 +16,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 - - -
 
-**1. Trade Shocks and Child Labor: Evidence from Brazil** (with Marcos Nakaguma)<br/>
-<small>[ <a href="#/" onclick="visib('child_labor')">Abstract</a> | [Draft][child_labor] ]</small>
+**[Trade Shocks and Child Labor: Evidence from Brazil][child_labor]** <br/>
+<small> with [Marcos Nakaguma](https://sites.google.com/view/nakaguma/home) </small> <br/>
+<small> <a href="#/" onclick="visib('child_labor')">Abstract</a> | [Draft][child_labor] </small>
 
 <div id="child_labor" style="display: none; text-align: justify; line-height: 1.2" ><small>
 This paper examines the medium- and long-term effects of Brazil's tariff reform in the 1990s on schooling and child labor. We exploit differences across industries in the adult and child employment composition in an empirical strategy that allows us to identify distinct effects of local economic shocks on household decisions. Relative to the national trend, we document that regions specialized in adult-specific industries experienced lower growth in schooling and higher increases in child labor, especially in paid works. Regions specialized in child-specific industries observed opposite effects. We provide evidence that these results translated into persistent effects on human capital formation and a structural transformation in employment composition.
@@ -26,18 +27,33 @@ This paper examines the medium- and long-term effects of Brazil's tariff reform 
 [child_labor]:{{ site.baseurl }}{% link files/papers/child_labor.pdf %}
 
 
-**2. Leaving a Footprint: European Immigration, Political Preferences, and Social Capital in Brazil** (with Marcos Nakaguma and Thales Pereira)<br/>
-<small>[ <a href="#/" onclick="visib('immigration')">Abstract</a> | [Draft][immigration] ]</small>
+**[Leaving a Footprint: European Immigration, Political Preferences, and Social Capital in Brazil][immigration]** <br/>
+<small> With [Marcos Nakaguma](https://sites.google.com/view/nakaguma/home) and [Thales Pereira](https://thaleszp.com/) </small> <br/>
+<small> <a href="#/" onclick="visib('immigration')">Abstract</a> | [Draft][immigration] </small>
 
 <div id="immigration" style="display: none; text-align: justify; line-height: 1.2" ><small>
-This paper documents the effects of the mass migration episode of the late nineteenth and early twentieth century on social capital and political attitudes in Brazil. We exploit novel data containing the vote shares at the municipality level for the 1960 Presidential elections, the last under the 1946 Constitution, to investigate the medium-run effects of immigration. We find an increase in the vote share for candidates associated with left-wing parties. In the long run, we provide evidence that municipalities with a higher fraction of European immigrants elected legislators more inclined to the left and document persistent impacts on social capital. More specifically, individuals living in high exposed municipalities to immigration are more likely to support democracy, trust neighbors and institutions, and be satisfied with state performance today. 
+This paper examines the impact of historical immigration on medium- and long-term political outcomes in Brazil. Using a unique dataset containing vote shares of presidential elections at the municipal level from 1955 to 2018, we find that municipalities with a higher inflow of immigrants in the late nineteenth and early twentieth century exhibited increased support for left-wing parties in the first democratic elections (1955-1960). We show that these political preferences persisted in the long run (1989-2018) when the country transitioned from a military dictatorship to a democracy. Our analysis highlights the role of immigrants' influence on the labor movement as a mechanism for transmitting values and preferences to the native population. We show that Brazilians living in municipalities with higher exposure to historical immigration are more likely to support democracy, exhibit higher levels of trust in institutions, and report preferences for redistribution.
 </small><br><br/></div>
 
-[immigration]:{{ site.baseurl }}{% link files/papers/immigration_paper.pdf %}
+[immigration]:{{ site.baseurl }}{% link files/papers/immigration.pdf %}
 
 
-**3. Sugarcane Expansion and Development: Evidence from São Paulo** (with Yuri Luz and Marcos Nakaguma)<br/>
-<small>[ <a href="#/" onclick="visib('sugarcane')">Abstract</a> | Draft (coming soon) ]</small>
+**[Fiscal Capacity and the Provision of Public Goods in Brazil, 1891-1930][child_labor]** <br/>
+<small> with [Marcos Nakaguma](https://sites.google.com/view/nakaguma/home) </small> <br/>
+<small> <a href="#/" onclick="visib('fiscal_capacity')">Abstract</a> | [Draft][fiscal_capacity] </small>
+
+<div id="fiscal_capacity" style="display: none; text-align: justify; line-height: 1.2" ><small>
+This paper examines the impact of agricultural booms on tax collection and public goods provision in Brazilian municipalities during the First Republic (1891-1930). We build a unique yearly panel dataset on public finance outcomes and employ a panel estimation approach that leverages exogenous variation in land suitability to estimate the impacts of coffee price fluctuations on the development of fiscal institutions in São Paulo. Our results reveal a strong positive relationship between coffee price booms and local tax collection between 1898 and 1928. Revenue increases primarily originated from indirect taxes on goods, services, and wealth transfers, imposing a disproportionate burden on the poorest individuals. We also document that exposure to coffee booms was associated with higher investments in public goods and services. These findings contribute to our understanding of how agricultural booms, coupled with the fiscal federalism structure of the 1891 constitution, influenced the capacity of Brazilian municipalities to establish tax systems that generate revenue from diverse sources.
+</small><br><br/></div>
+
+[fiscal_capacity]:{{ site.baseurl }}{% link files/papers/fiscal_capacity.pdf %}
+
+[comment]: <> [PDF][fiscal_capacity]{: .btn--research}
+
+
+**Sugarcane Expansion and Development: Evidence from São Paulo** <br/>
+<small> With Yuri Luz and [Marcos Nakaguma](https://sites.google.com/view/nakaguma/home) </small> <br/>
+<small> <a href="#/" onclick="visib('sugarcane')">Abstract</a> | Draft (coming soon) </small>
 
 <div id="sugarcane" style="display: none; text-align: justify; line-height: 1.2" ><small>
 This paper studies the impacts of sugarcane expansion on socioeconomic indicators in the Brazilian state of São Paulo, where the harvested area doubled in ten years. Using data from São Paulo municipalities and exploiting soil- and climate-induced variation in agricultural production patterns, we find that localities where sugarcane expanded experienced restructuring of the local agriculture sector from pasture lands to temporary crops. We also document a structural transformation in economic activity towards manufacturing and a faster increase in income per capita. 

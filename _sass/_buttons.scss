@@ -26,6 +26,29 @@
     background-color: mix(white, #000, 20%);
   }
 
+
+  
+  /* research page buttons */
+&--research {
+  display: inline-block;
+  margin-bottom: 0.25em;
+  padding: 0.125em 0.25em;
+  color: $link-color;
+  font-size: $type-size-6;
+  text-align: center;
+  text-decoration: none !important;
+  border: 1px solid;
+  border-color: $link-color;
+  border-radius: $border-radius;
+  cursor: pointer;
+
+  &:hover {
+    color: #fff;
+    background-color: $link-color !important;
+  }
+}
+
+
   .icon {
     margin-right: 0.5em;
   }
