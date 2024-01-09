@@ -1,5 +1,7 @@
-_site/
-_drafts/
+_site
+_drafts
 .DS_Store
 .sass-cache
+.jekyll-cache
 .jekyll-metadata
+vendor
