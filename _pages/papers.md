@@ -16,7 +16,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 - - -
 
-**[Trade Shocks and Child Labor: Evidence from Brazil][child_labor]** <br/>
+**[Trade Shocks and Human Capital: Evidence from Brazil's Trade Liberalization][child_labor]** <br/>
 <small> with [Marcos Nakaguma](https://sites.google.com/view/nakaguma/home) </small> <br/>
 <small> <a href="#/" onclick="visib('child_labor')">Abstract</a> | [Draft][child_labor] </small>
 
