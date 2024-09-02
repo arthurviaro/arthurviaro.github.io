@@ -28,7 +28,7 @@ This paper studies the medium and long-run effects of Brazil’s 1990s trade lib
 
 
 **[Leaving a Footprint: European Immigration and Political Preferences in Brazil][immigration]** <br/>
-<small> With [Marcos Nakaguma](https://sites.google.com/view/nakaguma/home) and [Thales Pereira](https://thaleszp.com/) </small> <br/>
+<small> with [Marcos Nakaguma](https://sites.google.com/view/nakaguma/home) and [Thales Pereira](https://thaleszp.com/) </small> <br/>
 <small> <a href="#/" onclick="visib('immigration')">Abstract</a> | [Draft][immigration] </small>
 
 <div id="immigration" style="display: none; text-align: justify; line-height: 1.2" ><small>
