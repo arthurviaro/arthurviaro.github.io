@@ -10,7 +10,7 @@ redirect_from:
 
 Welcome to my homepage!<br>
 
-I am a part-time professor of Economics at [Insper](https://www.insper.edu.br){:target="_blank"}. My research interests lie at the intersection of Development Economics and Political Economy.
+I am a part-time professor of Economics at [Insper](https://www.insper.edu.br){:target="_blank"}. My research interests lie at the intersection of Economic History and Development Economics.
 
 Before joining Insper, I completed my Ph.D. in Economics at São Paulo School of Economics (FGV EESP) and received my Master's degree in Economics from the University of São Paulo (FEA USP).
 

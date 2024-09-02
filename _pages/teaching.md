@@ -18,7 +18,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 **Insper**
 - International Trade (undergrad)
-- Fundamentals of Macroeconomics (undergrad)
+- Principles of Macroeconomics (undergrad)
 
 
 

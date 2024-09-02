@@ -21,25 +21,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <small> <a href="#/" onclick="visib('child_labor')">Abstract</a> | [Draft][child_labor] </small>
 
 <div id="child_labor" style="display: none; text-align: justify; line-height: 1.2" ><small>
-This paper studies the medium and long-run effects of Brazil’s 1990s trade liberalization reform on child labor, schooling, and human capital accumulation. Our analysis leverages extensive census and administrative data spanning nearly three decades to examine the effects of two distinct components of the shock that differentially affected the labor market opportunities for adults and children. We find that regions more exposed to child-specific tariff reductions experienced larger declines in child labor, accompanied by increases in schooling, with opposite results obtained for adult-specific tariff reductions. The effects of the shocks are persistent and always larger in the long run. Specifically, we show that tariff reductions impacted the educational attainment of the cohorts more exposed to trade liberalization during their formative years. Our results highlight the potential role of human capital investments in amplifying the impacts of economic shocks.
+This paper studies the medium and long-run effects of Brazil’s 1990s trade liberalization reform on child labor, schooling, and human capital accumulation. Our analysis leverages extensive census and administrative data spanning nearly three decades to examine the effects of two distinct components of the shock that differentially affected the labor market opportunities for adults and children. We find that regions more exposed to child-specific tariff reductions experienced larger declines in child labor, accompanied by larger increases in schooling; opposite results are obtained for regions harder-hit by adult-specific tariff reductions. The effects of the shocks are persistent and always larger in the long-run. Specifically, we show that tariff reductions impacted the human capital accumulated by the cohorts more exposed to the trade liberalization during their formative years. Our results highlight the potential role of human capital in amplifying the impacts of economic shocks.
 </small><br><br/></div>
 
 [child_labor]:{{ site.baseurl }}{% link files/papers/child_labor.pdf %}
 
 
-**[Leaving a Footprint: European Immigration, Political Preferences, and Social Capital in Brazil][immigration]** <br/>
+**[Leaving a Footprint: European Immigration and Political Preferences in Brazil][immigration]** <br/>
 <small> With [Marcos Nakaguma](https://sites.google.com/view/nakaguma/home) and [Thales Pereira](https://thaleszp.com/) </small> <br/>
 <small> <a href="#/" onclick="visib('immigration')">Abstract</a> | [Draft][immigration] </small>
 
 <div id="immigration" style="display: none; text-align: justify; line-height: 1.2" ><small>
-This paper examines the impact of historical immigration on medium- and long-term political outcomes in Brazil. Using a unique dataset containing vote shares of presidential elections at the municipal level from 1955 to 2018, we find that municipalities with a higher inflow of immigrants in the late nineteenth and early twentieth century exhibited increased support for left-wing parties in the first democratic elections (1955-1960). We show that these political preferences persisted in the long run (1989-2018) when the country transitioned from a military dictatorship to a democracy. Our analysis highlights the role of immigrants' influence on the labor movement as a mechanism for transmitting values and preferences to the native population. We show that Brazilians living in municipalities with higher exposure to historical immigration are more likely to support democracy, exhibit higher levels of trust in institutions, and report preferences for redistribution.
+This paper examines the impact of historical immigration on medium- and long-term political outcomes in Brazil. Using a unique dataset containing vote shares from presidential elections at the municipal level from 1955 to 2022, we find that municipalities with a higher share of immigrants in the late nineteenth and early twentieth centuries exhibited increased support for left-wing parties in the first democratic elections in the 1950s. These political preferences persisted in the long run as the country transitioned from a military dictatorship to a democracy in 1985. Our analysis highlights the role of immigrants in urbanization as a mechanism for transmitting values and preferences to the native population.
 </small><br><br/></div>
 
 [immigration]:{{ site.baseurl }}{% link files/papers/immigration.pdf %}
 
 
 **[Fiscal Capacity and the Provision of Public Goods in Brazil, 1891-1930][child_labor]** <br/>
-<small> with [Marcos Nakaguma](https://sites.google.com/view/nakaguma/home) </small> <br/>
 <small> <a href="#/" onclick="visib('fiscal_capacity')">Abstract</a> | [Draft][fiscal_capacity] </small>
 
 <div id="fiscal_capacity" style="display: none; text-align: justify; line-height: 1.2" ><small>
@@ -50,6 +49,10 @@ This paper examines the impact of agricultural booms on tax collection and publi
 
 [comment]: <> [PDF][fiscal_capacity]{: .btn--research}
 
+
+# <center> Work in Progress </center>
+
+- - -
 
 **Sugarcane Expansion and Development: Evidence from São Paulo** <br/>
 <small> With Yuri Luz and [Marcos Nakaguma](https://sites.google.com/view/nakaguma/home) </small> <br/>
