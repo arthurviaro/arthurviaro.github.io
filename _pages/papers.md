@@ -38,7 +38,7 @@ This paper examines the impact of historical immigration on medium- and long-ter
 [immigration]:{{ site.baseurl }}{% link files/papers/immigration.pdf %}
 
 
-**[Fiscal Capacity and the Provision of Public Goods in Brazil, 1891-1930][child_labor]** <br/>
+**[Fiscal Capacity and the Provision of Public Goods in Brazil, 1891-1930][fiscal_capacity]** <br/>
 <small> <a href="#/" onclick="visib('fiscal_capacity')">Abstract</a> | [Draft][fiscal_capacity] </small>
 
 <div id="fiscal_capacity" style="display: none; text-align: justify; line-height: 1.2" ><small>
