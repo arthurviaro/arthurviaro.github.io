@@ -17,8 +17,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 - - -
 
 **Insper**
-- International Trade (undergrad)
-- Principles of Macroeconomics (undergrad)
+- Microeconomics II (Undergraduate), 2025
+- International Economics (Undergraduate), 2022-2025
+- Principles of Macroeconomics (Undergraduate), 2024 
+<br>
+<br>
+
+
+**São Paulo School of Economics (EESP-FGV)**
+- Public Economics (Undergraduate), 2023
+- Statistics I (Undergraduate), 2023
+- Projects II (Undergraduate), 2022
+- Microeconomics II (Undergraduate), 2022
+- Introduction to Economics (Undergraduate), 2022-2023
 
 
 

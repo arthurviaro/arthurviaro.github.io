@@ -16,10 +16,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 - - -
 
-**[Trade Shocks and Human Capital: Evidence from Brazil's Trade Liberalization][child_labor]** <br/>
+<ins>**[Trade Shocks and Human Capital: Evidence from Brazil's Trade Liberalization][child_labor]**</ins> <br/>
 <small> with [Marcos Nakaguma](https://sites.google.com/view/nakaguma/home) </small> <br/>
 <!-- <small> <a href="#/" onclick="visib('child_labor')">Abstract</a> | [Draft][child_labor] </small> -->
-<small style="display: block; text-align: justify; line-height: 1.2"> Presentations: SBE 2019 (São Paulo-Brazil), LACEA/LAMES 2021 (Bogotá-Colômbia), NEUDC 2021 (Boston-United States), RIDGE 2024 (Santiago-Chile), EEA-ESEM 2024 (Rotterdam-Netherlands), GeFam 2024 (São Paulo-Brazil) </small>
+<small style="display: block; text-align: justify; line-height: 1.2"> Presentations: SBE 2019 and 2024, LACEA-LAMES 2021, NEUDC 2021, RIDGE 2024, EEA-ESEM 2024, and GeFam 2024 </small>
 
 <div id="child_labor" style="display: block <!-- none -->; text-align: justify; line-height: 1.2" ><small>
 This paper studies the medium and long-run effects of Brazil’s 1990s trade liberalization reform on child labor, schooling, and human capital accumulation. Our analysis leverages extensive census and administrative data spanning nearly three decades to examine the effects of two distinct components of the shock that differentially affected the labor market opportunities for adults and children. We find that regions more exposed to child-specific tariff reductions experienced larger declines in child labor, accompanied by larger increases in schooling; opposite results are obtained for regions harder-hit by adult-specific tariff reductions. The effects of the shocks are persistent and always larger in the long-run. Specifically, we show that tariff reductions impacted the human capital accumulated by the cohorts more exposed to the trade liberalization during their formative years. Our results highlight the potential role of human capital in amplifying the impacts of economic shocks.
@@ -28,10 +28,10 @@ This paper studies the medium and long-run effects of Brazil’s 1990s trade lib
 [child_labor]:{{ site.baseurl }}{% link files/papers/child_labor.pdf %}
 
 
-**[Leaving a Footprint: European Immigration and Political Preferences in Brazil][immigration]** <br/>
+<ins>**[Leaving a Footprint: European Immigration and Political Preferences in Brazil][immigration]**</ins> <br/>
 <small> with [Marcos Nakaguma](https://sites.google.com/view/nakaguma/home) and [Thales Pereira](https://thaleszp.com/) </small> <br/>
 <!-- <small> <a href="#/" onclick="visib('immigration')">Abstract</a> | [Draft][immigration] </small> -->
-<small style="display: block; text-align: justify; line-height: 1.2"> Presentations: SBE 2022 (Fortaleza-Brazil), RIDGE 2024 (Santiago-Chile) </small>
+<small style="display: block; text-align: justify; line-height: 1.2"> Presentations: SBE 2022 and RIDGE 2024 </small>
 
 <div id="immigration" style="display: block <!-- none -->; text-align: justify; line-height: 1.2" ><small>
 This paper examines the impact of historical immigration on medium- and long-term political outcomes in Brazil. Using a unique dataset containing vote shares from presidential elections at the municipal level from 1955 to 2022, we find that municipalities with a higher share of immigrants in the late nineteenth and early twentieth centuries exhibited increased support for left-wing parties in the first democratic elections in the 1950s. These political preferences persisted in the long run as the country transitioned from a military dictatorship to a democracy in 1985. Our analysis highlights the role of immigrants in urbanization as a mechanism for transmitting values and preferences to the native population.
@@ -40,9 +40,9 @@ This paper examines the impact of historical immigration on medium- and long-ter
 [immigration]:{{ site.baseurl }}{% link files/papers/immigration.pdf %}
 
 
-**[Fiscal Capacity and the Provision of Public Goods in Brazil, 1891-1930][fiscal_capacity]** <br/>
+<ins>**[Fiscal Capacity and the Provision of Public Goods in Brazil, 1891-1930][fiscal_capacity]**</ins> <br/>
 <!-- <small> <a href="#/" onclick="visib('fiscal_capacity')">Abstract</a> | [Draft][fiscal_capacity] </small> -->
-<small style="display: block; text-align: justify; line-height: 1.2"> Presentations: SBE 2023 (Rio de Janeiro-Brazil) </small>
+<small style="display: block; text-align: justify; line-height: 1.2"> Presentations: SBE 2023 </small>
 
 <div id="fiscal_capacity" style="display: block <!-- none -->; text-align: justify; line-height: 1.2" ><small>
 This paper examines the impact of agricultural booms on tax collection and public goods provision in Brazilian municipalities during the First Republic (1891-1930). We build a unique yearly panel dataset on public finance outcomes and employ a panel estimation approach that leverages exogenous variation in land suitability to estimate the impacts of coffee price fluctuations on the development of fiscal institutions in São Paulo. Our results reveal a strong positive relationship between coffee price booms and local tax collection between 1898 and 1928. Revenue increases primarily originated from indirect taxes on goods, services, and wealth transfers, imposing a disproportionate burden on the poorest individuals. We also document that exposure to coffee booms was associated with higher investments in public goods and services. These findings contribute to our understanding of how agricultural booms, coupled with the fiscal federalism structure of the 1891 constitution, influenced the capacity of Brazilian municipalities to establish tax systems that generate revenue from diverse sources.
