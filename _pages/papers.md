@@ -25,7 +25,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 This paper studies the medium and long-run effects of Brazil’s 1990s trade liberalization reform on child labor, schooling, and human capital accumulation. Our analysis leverages extensive census and administrative data spanning nearly three decades to examine the effects of two distinct components of the shock that differentially affected the labor market opportunities for adults and children. We find that regions more exposed to child-specific tariff reductions experienced larger declines in child labor, accompanied by larger increases in schooling; opposite results are obtained for regions harder-hit by adult-specific tariff reductions. The effects of the shocks are persistent and always larger in the long-run. Specifically, we show that tariff reductions impacted the human capital accumulated by the cohorts more exposed to the trade liberalization during their formative years. Our results highlight the potential role of human capital in amplifying the impacts of economic shocks.
 </small><br><br/></div>
 
-[child_labor]:{{ site.baseurl }}{% link files/papers/child_labor.pdf %}
+[child_labor]:{{ site.baseurl }}{% link files/papers/Trade Shocks and Human Capital.pdf %}
 
 
 <ins>**[Leaving a Footprint: European Immigration and Political Preferences in Brazil][immigration]**</ins> <br/>
