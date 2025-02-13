@@ -16,7 +16,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 - - -
 
-<ins>**[Trade Shocks and Human Capital: Evidence from Brazil's Trade Liberalization][child_labor]**</ins> <em>(Submitted)</em> <br/>
+<ins>**[Trade Shocks and Human Capital: Evidence from Brazil's Trade Liberalization](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4844234)**</ins> <em>(Submitted)</em> <br/>
 <small> with [Marcos Nakaguma](https://sites.google.com/view/nakaguma/home) </small> <br/>
 <!-- <small> <a href="#/" onclick="visib('child_labor')">Abstract</a> | [Draft][child_labor] </small> -->
 <small style="display: block; text-align: justify; line-height: 1.2"> Presentations: SBE 2019 and 2024, LACEA-LAMES 2021, NEUDC 2021, RIDGE 2024, EEA-ESEM 2024, and GeFam 2024 </small>
