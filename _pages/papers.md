@@ -57,6 +57,8 @@ This paper examines the impact of agricultural booms on tax collection and publi
 
 - - -
 
+**Railroad Expansion and Mortality in Early Twentieth-Century Brazil** <br/>
+
 **Sugarcane Expansion and Development: Evidence from São Paulo** <br/>
 <small> With Yuri Luz and [Marcos Nakaguma](https://sites.google.com/view/nakaguma/home) </small> <br/>
 <small> <a href="#/" onclick="visib('sugarcane')">Abstract</a> | Draft (coming soon) </small>
