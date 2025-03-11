@@ -30,8 +30,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 - Projects II (Undergraduate), 2022
 - Microeconomics II (Undergraduate), 2022
 - Introduction to Economics (Undergraduate), 2022-2023
+<br>
+<br>
 
 
+<ins>**[Notes on Topics in Economic History](/files/notes_economic_history.pdf)**</ins>
 
 
 
