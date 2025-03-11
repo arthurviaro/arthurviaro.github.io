@@ -28,16 +28,16 @@ This paper studies the medium and long-run effects of Brazil’s 1990s trade lib
 [child_labor]:{{ site.baseurl }}{% link files/papers/Trade Shocks and Human Capital.pdf %}
 
 
-<ins>**[Leaving a Footprint: European Immigration and Political Preferences in Brazil][immigration]**</ins> <br/>
+<ins>**[How Immigration Shapes Politics: Populism, Labor Movements, and Political Preferences in Brazil][immigration]**</ins> <br/>
 <small> with [Marcos Nakaguma](https://sites.google.com/view/nakaguma/home) and [Thales Pereira](https://thaleszp.com/) </small> <br/>
 <!-- <small> <a href="#/" onclick="visib('immigration')">Abstract</a> | [Draft][immigration] </small> -->
 <small style="display: block; text-align: justify; line-height: 1.2"> Presentations: SBE 2022 and RIDGE 2024 </small>
 
 <div id="immigration" style="display: block <!-- none -->; text-align: justify; line-height: 1.2" ><small>
-This paper examines the impact of historical immigration on medium- and long-term political outcomes in Brazil. Using a unique dataset containing vote shares from presidential elections at the municipal level from 1955 to 2022, we find that municipalities with a higher share of immigrants in the late nineteenth and early twentieth centuries exhibited increased support for left-wing parties in the first democratic elections in the 1950s. These political preferences persisted in the long run as the country transitioned from a military dictatorship to a democracy in 1985. Our analysis highlights the role of immigrants in urbanization as a mechanism for transmitting values and preferences to the native population.
+Despite extensive research on the relationship between the urban working class and populism in postwar Latin America, empirical evidence remains limited. This paper examines the impact of immigration during the Age of Mass Migration (1890-1920) on political outcomes in Brazil. We ask whether immigration to São Paulo increased electoral competition, given its crucial role in the country’s development. Exploiting cross-municipality variation in immigration that arises from the interaction between overall immigrant inflows and the expansion of São Paulo’s railway network, we find that a higher share of immigrants led to increased support for labor-related candidates in the first competitive presidential elections during the 20th century (1955 and 1960). This finding challenges the conventional view that urban workers supported populist leaders regardless of whether or not they were aligned with conservative groups. These effects persisted even after Brazil returned to democracy in 1985. Our analysis suggests that immigration increased electoral competition in Brazil, exacerbating social and economic tensions that culminated in the 1964 military coup.
 </small><br><br/></div>
 
-[immigration]:{{ site.baseurl }}{% link files/papers/immigration.pdf %}
+[immigration]:{{ site.baseurl }}{% link files/papers/How Immigration Shapes Politics.pdf %}
 
 
 <ins>**[Fiscal Capacity and the Provision of Public Goods in Brazil, 1891-1930][fiscal_capacity]**</ins> <br/>
@@ -57,8 +57,7 @@ This paper examines the impact of agricultural booms on tax collection and publi
 
 - - -
 
-**Railroad Expansion and Mortality in Early Twentieth-Century Brazil** <br/>
-
+<!--
 **Sugarcane Expansion and Development: Evidence from São Paulo** <br/>
 <small> With Yuri Luz and [Marcos Nakaguma](https://sites.google.com/view/nakaguma/home) </small> <br/>
 <small> <a href="#/" onclick="visib('sugarcane')">Abstract</a> | Draft (coming soon) </small>
@@ -66,7 +65,17 @@ This paper examines the impact of agricultural booms on tax collection and publi
 <div id="sugarcane" style="display: none; text-align: justify; line-height: 1.2" ><small>
 This paper studies the impacts of sugarcane expansion on socioeconomic indicators in the Brazilian state of São Paulo, where the harvested area doubled in ten years. Using data from São Paulo municipalities and exploiting soil- and climate-induced variation in agricultural production patterns, we find that localities where sugarcane expanded experienced restructuring of the local agriculture sector from pasture lands to temporary crops. We also document a structural transformation in economic activity towards manufacturing and a faster increase in income per capita. 
 </small><br><br/></div>
+-->
 
+**Sugarcane Expansion and Development: Evidence from São Paulo** <br/>
+<small> With Yuri Luz and [Marcos Nakaguma](https://sites.google.com/view/nakaguma/home) </small> <br/>
+<small> Draft (coming soon) </small>
+
+<div id="sugarcane" style="display: block; text-align: justify; line-height: 1.2" ><small>
+This paper examines the effects of sugarcane expansion on socioeconomic indicators in the Brazilian state of São Paulo, where the harvested area has doubled over a decade. By analyzing data from municipalities across São Paulo and leveraging variations in agricultural production patterns driven by soil and climate factors, we find that regions experiencing sugarcane expansion underwent a significant restructuring of the local agricultural sector, shifting from pasture lands to temporary crops. Additionally, we observe a structural transformation in economic activity, with a notable transition towards manufacturing, alongside a more rapid increase in per capita income. 
+</small><br><br/></div>
+
+**Railroad Expansion and Mortality in Early Twentieth-Century Brazil** <br/>
 
 
 
