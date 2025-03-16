@@ -36,6 +36,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <ins>**[Notes on Topics in Economic History](/files/notes_economic_history.pdf)**</ins>
 
+<ins>**[Notes on Topics in Economic History (slides)](/files/notes_economic_history_slides.pdf)**</ins>
+
 
 
 [//]: This java script is the button to show abstract
