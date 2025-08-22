@@ -8,16 +8,14 @@ redirect_from:
   - /about.html
 ---
 
-Welcome to my website!<br>
+I am a lecturer in Economics at [Insper](https://www.insper.edu.br){:target="_blank"}. My research lies at the intersection of Development Economics and Economic History, with a particular focus on institutional and political change in Brazil during the early twentieth century and its implications for long-term development.
 
-I am a part-time professor of Economics at [Insper](https://www.insper.edu.br){:target="_blank"}. My research interests lie at the intersection of Economic History and Development Economics.
+Before joining Insper, I completed my Ph.D. in Economics at São Paulo School of Economics (EESP-FGV) and received my Master's degree in Economics from the University of São Paulo (FEA-USP). You can check my full CV [here](/files/cv_arthurviaro.pdf). 
 
-Before joining Insper, I completed my Ph.D. in Economics at São Paulo School of Economics (FGV EESP) and received my Master's degree in Economics from the University of São Paulo (FEA USP). You can check my full CV [here](/files/cv_arthurviaro.pdf). 
-
-Feel free to contact me at <arthurav@insper.edu.br>.
+You can contact me at <arthurav@insper.edu.br>.
 
 **Research Interests**<br>
-Economic History, Development Economics, Political Economy
+Development Economics, Political Economy, Economic History
 
 <!---
 Site-wide configuration
