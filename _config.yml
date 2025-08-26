@@ -26,7 +26,7 @@ author:
   name             : "Arthur Viaro"
   pronouns         : # example: "she/her"  
   bio              : "Lecturer, Insper"
-  location         : "São Paulo"
+  location         : "São Paulo, Brazil"
   employer         : "Insper"
   uri              : # URL
   email            : "arthurav@insper.edu.br" 
@@ -34,10 +34,10 @@ author:
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?hl=pt-BR&user=hZpig68AAAAJ"
+  googlescholar    : # "https://scholar.google.com/citations?hl=pt-BR&user=hZpig68AAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "https://orcid.org/0000-0001-5748-9298"
+  orcid            : # "https://orcid.org/0000-0001-5748-9298"
   semantic         : # URL
   pubmed           : # URL
   researchgate     : # URL
