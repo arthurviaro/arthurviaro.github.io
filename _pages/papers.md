@@ -80,6 +80,7 @@ Railroad Expansion and Mortality in Early Twentieth-Century Brazil <br/>
 
 Broadcasting Populism: Radio and Mass Politics in Brazil <br/>
 
+Political Power and State Capacity in Early Twentieth-Century Brazil <br/>
 
 [//]: This java script is the button to show abstract
 <script>
