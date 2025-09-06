@@ -71,13 +71,14 @@ Sugarcane Expansion and Development: Evidence from São Paulo <br/>
 <small> with Yuri Luz and [Marcos Nakaguma](https://sites.google.com/view/nakaguma/home) </small> <br/>
 <small> <a href="#/" onclick="visib('sugarcane')">Abstract</a> | Draft (coming soon) </small>
 
-<div id="sugarcane" style="display: block; text-align: justify; line-height: 1.2" ><small>
+<div id="sugarcane" style="display: none; text-align: justify; line-height: 1.2" ><small>
 This paper examines the effects of sugarcane expansion on socioeconomic indicators in the Brazilian state of São Paulo, where the harvested area has doubled over a decade. By analyzing data from municipalities across São Paulo and leveraging variations in agricultural production patterns driven by soil and climate factors, we find that regions experiencing sugarcane expansion underwent a significant restructuring of the local agricultural sector, shifting from pasture lands to temporary crops. Additionally, we observe a structural transformation in economic activity, with a notable transition towards manufacturing, alongside a more rapid increase in per capita income. 
 </small><br><br/></div>
 
 Railroad Expansion and Mortality in Early Twentieth-Century Brazil <br/>
 <small> with [Darcio Genicolo](https://darciogm.github.io/) </small> <br/>
 
+Broadcasting Populism: Radio and Mass Politics in Brazil <br/>
 
 
 [//]: This java script is the button to show abstract
