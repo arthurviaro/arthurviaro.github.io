@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>introducao – Arthur Viaro</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Arthur Viaro</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../teaching.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../cv.pdf"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#aula-1---fundamentos-de-computação" id="toc-aula-1---fundamentos-de-computação" class="nav-link active" data-scroll-target="#aula-1---fundamentos-de-computação">Aula 1 - Fundamentos de Computação</a>
+  <ul class="collapse">
+  <li><a href="#ciência-da-computação-e-resolução-de-problemas" id="toc-ciência-da-computação-e-resolução-de-problemas" class="nav-link" data-scroll-target="#ciência-da-computação-e-resolução-de-problemas">Ciência da Computação e Resolução de Problemas</a></li>
+  <li><a href="#como-os-computadores-pensam" id="toc-como-os-computadores-pensam" class="nav-link" data-scroll-target="#como-os-computadores-pensam">Como os Computadores “Pensam”?</a>
+  <ul class="collapse">
+  <li><a href="#sistema-binário" id="toc-sistema-binário" class="nav-link" data-scroll-target="#sistema-binário">Sistema Binário</a></li>
+  <li><a href="#ascii" id="toc-ascii" class="nav-link" data-scroll-target="#ascii">ASCII</a></li>
+  <li><a href="#unicode" id="toc-unicode" class="nav-link" data-scroll-target="#unicode">UNICODE</a></li>
+  <li><a href="#rgb" id="toc-rgb" class="nav-link" data-scroll-target="#rgb">RGB</a></li>
+  </ul></li>
+  <li><a href="#algoritmos" id="toc-algoritmos" class="nav-link" data-scroll-target="#algoritmos">Algoritmos</a></li>
+  <li><a href="#pseudocódigo" id="toc-pseudocódigo" class="nav-link" data-scroll-target="#pseudocódigo">Pseudocódigo</a></li>
+  <li><a href="#o-que-vem-pela-frente" id="toc-o-que-vem-pela-frente" class="nav-link" data-scroll-target="#o-que-vem-pela-frente">O que vem pela frente?</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<br>
+<p style="text-align:center; font-size:28px; font-weight:bold;">
+EAE1106 - Métodos Computacionais para Economia <br>
+</p><p style="text-align: center;">
+Faculdade de Economia, Administração, Contabilidade e Atuária <br> Universidade de São Paulo <br>
+</p>
+<p style="text-align: center;">
+Prof.&nbsp;Arthur Viaro <br> 1º semestre - 2026
+</p>
+<hr>
+<a href="https://arthurviaro.github.io/">arthurviaro.github.io</a><br>
+<p></p>
+<section id="aula-1---fundamentos-de-computação" class="level1">
+<h1>Aula 1 - Fundamentos de Computação</h1>
+<ul>
+<li><a href="#ciência-da-computação-e-resolução-de-problemas">Ciência da Computação e Resolução de Problemas</a></li>
+<li><a href="#como-os-computadores-pensam">Como os Computadores “Pensam”?</a>
+<ul>
+<li><a href="#sistema-binário">Sistema Binário</a></li>
+<li><a href="#ascii">ASCII</a></li>
+<li><a href="#unicode">UNICODE</a></li>
+</ul></li>
+</ul>
+<section id="ciência-da-computação-e-resolução-de-problemas" class="level2">
+<h2 class="anchored" data-anchor-id="ciência-da-computação-e-resolução-de-problemas">Ciência da Computação e Resolução de Problemas</h2>
+<ul>
+<li>Essencialmente, a programação de computadores consiste em receber uma entrada (input) e produzir uma saída (output) — ou seja, resolver um problema. O que acontece entre a entrada e a saída, o que podemos chamar de “caixa-preta”, é o foco a ciência da computação.</li>
+</ul>
+<center>
+<img src="01-introducao_files/figure-html/c2facc0b-3-image.png" class="img-fluid">
+</center>
+</section>
+<section id="como-os-computadores-pensam" class="level2">
+<h2 class="anchored" data-anchor-id="como-os-computadores-pensam">Como os Computadores “Pensam”?</h2>
+<ul>
+<li>Para resolver problemas, precisamos de uma forma de representar informações. Imagine que precisamos registrar a presença em uma turma.</li>
+<li>Uma maneira simples seria usar o <strong>sistema unário (base 1)</strong> - como levantar um dedo ou fazer um risco no papel para cada pessoa presente.</li>
+<li>Computadores operam de forma diferente, utilizando o <strong>sistema binário (base 2)</strong>. É da abreviação de “<em>binary digit</em>” que surge o termo <em>bit</em>.</li>
+<li>Um <em>bit</em> é a menor unidade de informação. Ele funciona como uma lâmpada, podendo assumir apenas dois valores: 0 (desligado) ou 1 (ligado).</li>
+<li>Uma única “lâmpada” (ou <em>bit</em>) só nos permite contar até 1. No entanto, quando combinamos várias delas, o poder de representação cresce significativamente.</li>
+<li>Fisicamente, isso é realizado por milhões de transistores dentro do seu dispositivo (como um iPhone ou PC) que agem como interruptores: ligados e desligados.</li>
+</ul>
+<section id="sistema-binário" class="level3">
+<h3 class="anchored" data-anchor-id="sistema-binário">Sistema Binário</h3>
+<ul>
+<li>Suponha que queremos começar a contar usando o sistema binário, ou seja, usando apenas zeros e uns. Como um computador entende que uma sequência de 0s e 1s representa o número 5 ou 137?</li>
+<li>Usamos um sistema de <strong>pesos posicionais</strong>! Por exemplo, podemos atribuir um valor a cada posição possível em nosso dígito binário: <code>4, 2 e 1</code></li>
+<li>Utilizando três <em>bits</em>, a representação do número zero seria:</li>
+</ul>
+<div style="width: 150px; margin: auto;">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">4</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>Analogamente, a representação do número um seria:</li>
+</ul>
+<div style="width: 150px; margin: auto;">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">4</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>Usando essa mesma lógica, poderíamos propor a seguinte representação do número dois:</li>
+</ul>
+<div style="width: 150px; margin: auto;">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">4</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>A representação do número três seria dada por:</li>
+</ul>
+<div style="width: 150px; margin: auto;">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">4</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>O número quatro seria representado da seguinte maneira:</li>
+</ul>
+<div style="width: 150px; margin: auto;">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">4</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>Utilizando apenas três <em>bits</em>, o valor máximo que conseguimos alcançar é sete!</li>
+</ul>
+<div style="width: 150px; margin: auto;">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">4</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>Pode parecer estranho no início, mas você já utiliza essa lógica todos os dias sem perceber! A estrutura que usamos para o sistema binário é exatamente a mesma que usamos para contar no nosso cotidiano.</li>
+<li>Estamos acostumados a lidar com o <strong>sistema decimal (base 10)</strong>, que possui dez dígitos à disposição: <code>0, 1, 2, 3, 4, 5, 6, 7, 8 e 9</code>.</li>
+<li>Assim, quando escrevemos o número 123, estamos na verdade seguindo um sistema de “posições” baseados em potências de 10:</li>
+</ul>
+<div style="width: 150px; margin: auto;">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline">\(10^2\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(10^1\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(10^0\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">(100)</td>
+<td style="text-align: center;">(10)</td>
+<td style="text-align: center;">(1)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote class="blockquote">
+<p>100 <span class="math inline">\(\times\)</span> 1 + 10 <span class="math inline">\(\times\)</span> 2 + 1 <span class="math inline">\(\times\)</span> 3</p>
+</blockquote>
+<ul>
+<li>Assim, não importa se estamos usando a base decimal ou binária; o funcionamento é o mesmo. A única coisa que muda é a base da potência!</li>
+<li>Enquanto no sistema decimal as posições são potências de 10:</li>
+</ul>
+<div style="width: 150px; margin: auto;">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline">\(10^2\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(10^1\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(10^0\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">#</td>
+<td style="text-align: center;">#</td>
+<td style="text-align: center;">#</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>No sistema dos computadores (base 2), as posições são potências de 2:</li>
+</ul>
+<div style="width: 150px; margin: auto;">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline">\(2^2\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(2^1\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(2^0\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">#</td>
+<td style="text-align: center;">#</td>
+<td style="text-align: center;">#</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>Note que, no sistema binário, precisamos de três <em>bits</em> (as casas do quatro, do dois e do um) para representar todos os números no intervalo de 0 a 7.</li>
+<li>Para representar o número 8, precisamos adicionar um quarto <em>bit</em>, correspondente à casa <span class="math inline">\(2^3\)</span>:</li>
+</ul>
+<div style="width: 150px; margin: auto;">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline">\(2^3\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(2^2\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(2^1\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(2^0\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>Geralmente, os computadores processam conjuntos de oito <em>bits</em>, conhecidos como <em>byte</em>. Com oito posições, conseguimos representar uma gama muito maior de valores!</li>
+</ul>
+<div style="display: flex; justify-content: center;">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 27%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Número decimal</th>
+<th>Número binário</th>
+<th>Cálculo para conversão</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>00000000</td>
+<td><span class="math inline">\(0\cdot 2^7 + 0\cdot 2^6 + 0\cdot 2^5 + 0\cdot 2^4 + 0\cdot 2^3 + 0\cdot 2^2 + 0\cdot 2^1 + 0\cdot 2^0 = 0\)</span></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>00000001</td>
+<td><span class="math inline">\(0\cdot 2^7 + 0\cdot 2^6 + 0\cdot 2^5 + 0\cdot 2^4 + 0\cdot 2^3 + 0\cdot 2^2 + 0\cdot 2^1 + 1\cdot 2^0 = 1\)</span></td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>00000101</td>
+<td><span class="math inline">\(0\cdot 2^7 + 0\cdot 2^6 + 0\cdot 2^5 + 0\cdot 2^4 + 0\cdot 2^3 + 1\cdot 2^2 + 0\cdot 2^1 + 1\cdot 2^0 = 5\)</span></td>
+</tr>
+<tr class="even">
+<td>48</td>
+<td>00110000</td>
+<td><span class="math inline">\(0\cdot 2^7 + 0\cdot 2^6 + 1\cdot 2^5 + 1\cdot 2^4 + 0\cdot 2^3 + 0\cdot 2^2 + 0\cdot 2^1 + 0\cdot 2^0 = 48\)</span></td>
+</tr>
+<tr class="odd">
+<td>137</td>
+<td>10001001</td>
+<td><span class="math inline">\(1\cdot 2^7 + 0\cdot 2^6 + 0\cdot 2^5 + 0\cdot 2^4 + 1\cdot 2^3 + 0\cdot 2^2 + 0\cdot 2^1 + 1\cdot 2^0 = 137\)</span></td>
+</tr>
+<tr class="even">
+<td>255</td>
+<td>11111111</td>
+<td><span class="math inline">\(1\cdot 2^7 + 1\cdot 2^6 + 1\cdot 2^5 + 1\cdot 2^4 + 1\cdot 2^3 + 1\cdot 2^2 + 1\cdot 2^1 + 1\cdot 2^0 = 255\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="ascii" class="level3">
+<h3 class="anchored" data-anchor-id="ascii">ASCII</h3>
+<ul>
+<li>Assim como os números são representados por padrões binários de zeros e uns, as letras também são representadas por combinações de zeros e uns!</li>
+<li>Como existe sobreposição entre os padrões binários que representam números e os que representam letras, foi criado um padrão chamado ASCII (<em>American Standard Code for Information Interchange</em>).</li>
+<li>O ASCII associa números específicos a caracteres específicos, permitindo que computadores representem texto de forma padronizada.</li>
+<li>Por exemplo, a letra <code>A</code> foi associada ao número 65. No sistema binário, o número 65 é representado por <code>01000001</code>. Podemos visualizar da seguinte maneira:</li>
+</ul>
+<div style="width: 250px; margin: auto;">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">128</th>
+<th style="text-align: center;">64</th>
+<th style="text-align: center;">32</th>
+<th style="text-align: center;">16</th>
+<th style="text-align: center;">8</th>
+<th style="text-align: center;">4</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>Se você recebesse uma mensagem de texto cujo conteúdo binário representasse os números 72, 73 e 33, ao convertê-los usando a tabela ASCII teríamos:</li>
+</ul>
+<div style="width: 250px; margin: auto;">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">H</th>
+<th style="text-align: center;">I</th>
+<th style="text-align: center;">!</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">72</td>
+<td style="text-align: center;">73</td>
+<td style="text-align: center;">33</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>Felizmente, padrões como o ASCII permitem que todos os computadores “concordem” sobre qual número representa qual caractere. A seguir, um mapa dos valores ASCII:</li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 6%">
+<col style="width: 5%">
+<col style="width: 6%">
+<col style="width: 5%">
+<col style="width: 6%">
+<col style="width: 5%">
+<col style="width: 6%">
+<col style="width: 5%">
+<col style="width: 6%">
+<col style="width: 5%">
+<col style="width: 6%">
+<col style="width: 5%">
+<col style="width: 6%">
+<col style="width: 5%">
+<col style="width: 6%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">0</td>
+<td style="text-align: center;">NUL</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: center;">DLE</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: center;">SP</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: right;">64</td>
+<td style="text-align: center;">@</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: center;">P</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: center;">`</td>
+<td style="text-align: right;">112</td>
+<td style="text-align: center;">p</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1</td>
+<td style="text-align: center;">SOH</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: center;">DC1</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: center;">!</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: right;">81</td>
+<td style="text-align: center;">Q</td>
+<td style="text-align: right;">97</td>
+<td style="text-align: center;">a</td>
+<td style="text-align: right;">113</td>
+<td style="text-align: center;">q</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2</td>
+<td style="text-align: center;">STX</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: center;">DC2</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: center;">”</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: right;">66</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: right;">98</td>
+<td style="text-align: center;">b</td>
+<td style="text-align: right;">114</td>
+<td style="text-align: center;">r</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">3</td>
+<td style="text-align: center;">ETX</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: center;">DC3</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: center;">#</td>
+<td style="text-align: right;">51</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: right;">67</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: center;">S</td>
+<td style="text-align: right;">99</td>
+<td style="text-align: center;">c</td>
+<td style="text-align: right;">115</td>
+<td style="text-align: center;">s</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">4</td>
+<td style="text-align: center;">EOT</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: center;">DC4</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: center;">$</td>
+<td style="text-align: right;">52</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: center;">D</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: center;">T</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: center;">d</td>
+<td style="text-align: right;">116</td>
+<td style="text-align: center;">t</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">5</td>
+<td style="text-align: center;">ENQ</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: center;">NAK</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: center;">%</td>
+<td style="text-align: right;">53</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: right;">69</td>
+<td style="text-align: center;">E</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: center;">U</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: center;">e</td>
+<td style="text-align: right;">117</td>
+<td style="text-align: center;">u</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">6</td>
+<td style="text-align: center;">ACK</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: center;">SYN</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: center;">&amp;</td>
+<td style="text-align: right;">54</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: center;">V</td>
+<td style="text-align: right;">102</td>
+<td style="text-align: center;">f</td>
+<td style="text-align: right;">118</td>
+<td style="text-align: center;">v</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">7</td>
+<td style="text-align: center;">BEL</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: center;">ETB</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: center;">’</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: right;">71</td>
+<td style="text-align: center;">G</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: center;">W</td>
+<td style="text-align: right;">103</td>
+<td style="text-align: center;">g</td>
+<td style="text-align: right;">119</td>
+<td style="text-align: center;">w</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">8</td>
+<td style="text-align: center;">BS</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: center;">CAN</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: center;">(</td>
+<td style="text-align: right;">56</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: center;">H</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: right;">104</td>
+<td style="text-align: center;">h</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: center;">x</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">9</td>
+<td style="text-align: center;">HT</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: center;">EM</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: center;">)</td>
+<td style="text-align: right;">57</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: right;">73</td>
+<td style="text-align: center;">I</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: center;">Y</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: center;">i</td>
+<td style="text-align: right;">121</td>
+<td style="text-align: center;">y</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">10</td>
+<td style="text-align: center;">LF</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: center;">SUB</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: center;">*</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: center;">:</td>
+<td style="text-align: right;">74</td>
+<td style="text-align: center;">J</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: center;">Z</td>
+<td style="text-align: right;">106</td>
+<td style="text-align: center;">j</td>
+<td style="text-align: right;">122</td>
+<td style="text-align: center;">z</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">11</td>
+<td style="text-align: center;">VT</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: center;">ESC</td>
+<td style="text-align: right;">43</td>
+<td style="text-align: center;">+</td>
+<td style="text-align: right;">59</td>
+<td style="text-align: center;">;</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: center;">K</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: center;">[</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: center;">k</td>
+<td style="text-align: right;">123</td>
+<td style="text-align: center;">{</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">12</td>
+<td style="text-align: center;">FF</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: center;">FS</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: center;">,</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: center;">&lt;</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: center;">L</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: center;">\</td>
+<td style="text-align: right;">108</td>
+<td style="text-align: center;">l</td>
+<td style="text-align: right;">124</td>
+<td style="text-align: center;">|</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">13</td>
+<td style="text-align: center;">CR</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: center;">GS</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: right;">61</td>
+<td style="text-align: center;">=</td>
+<td style="text-align: right;">77</td>
+<td style="text-align: center;">M</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: center;">]</td>
+<td style="text-align: right;">109</td>
+<td style="text-align: center;">m</td>
+<td style="text-align: right;">125</td>
+<td style="text-align: center;">}</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">14</td>
+<td style="text-align: center;">SO</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: center;">RS</td>
+<td style="text-align: right;">46</td>
+<td style="text-align: center;">.</td>
+<td style="text-align: right;">62</td>
+<td style="text-align: center;">&gt;</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: center;">N</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: center;">^</td>
+<td style="text-align: right;">110</td>
+<td style="text-align: center;">n</td>
+<td style="text-align: right;">126</td>
+<td style="text-align: center;">~</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">15</td>
+<td style="text-align: center;">SI</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: center;">US</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: center;">/</td>
+<td style="text-align: right;">63</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: right;">79</td>
+<td style="text-align: center;">O</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: center;">_</td>
+<td style="text-align: right;">111</td>
+<td style="text-align: center;">o</td>
+<td style="text-align: right;">127</td>
+<td style="text-align: center;">DEL</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Observações</strong></p>
+<ul>
+<li>Cada caractere ASCII ocupa 1 <em>byte</em> (8 <em>bits</em>).</li>
+<li>Com 8 <em>bits</em>, é possível representar até 256 valores diferentes (0–255).</li>
+<li>O ASCII padrão utiliza apenas 128 valores (0–127).</li>
+</ul>
+</section>
+<section id="unicode" class="level3">
+<h3 class="anchored" data-anchor-id="unicode">UNICODE</h3>
+<ul>
+<li><p>Com a evolução da comunicação global, o limite de 256 caracteres do padrão ASCII tornou-se insuficiente.</p></li>
+<li><p>O padrão Unicode surgiu para expandir a quantidade de <em>bits</em> utilizados, permitindo representar virtualmente todos os sistemas de escrita da humanidade, além de símbolos e emojis.</p>
+<p>😀 😃 😄 😁 😆 😅 😂 🙂 🙃 😉 😊 😇 😍 😘 😗 😙 😚 😋 😛 😜 😝 🤑 🤓 😎 🤗 😏 😶 😐 😑 😒 🙄 😬 😕 ☹️ 😟 😮 😯 😲 😳 😦 😧 😨</p></li>
+<li><p>Embora o padrão binário (o código) seja universal, cada fabricante (Apple, Google, Microsoft) pode estilizar visualmente o emoji de forma diferente.</p></li>
+<li><p>O Unicode continua em expansão, adicionando novos caracteres e emojis regularmente para refletir a diversidade cultural e tecnológica.</p></li>
+</ul>
+</section>
+<section id="rgb" class="level3">
+<h3 class="anchored" data-anchor-id="rgb">RGB</h3>
+<ul>
+<li>Zeros e uns também definem cores através do sistema RGB (Red, Green, Blue). Cada cor é uma combinação de três intensidades numéricas que variam de 0 a 255 (8 bits).</li>
+<li>Red, green, and blue (called RGB) are a combination of three numbers.</li>
+</ul>
+<center>
+<img src="01-introducao_files/figure-html/c2facc0b-1-image-2.png" class="img-fluid">
+</center>
+<ul>
+<li>Os mesmos números do “HI!” (72, 73, 33) seriam interpretados por um leitor de imagem como um tom de amarelo musgo (R=72, G=73, B=33).</li>
+</ul>
+<center>
+<img src="01-introducao_files/figure-html/c2facc0b-2-image-3.png" class="img-fluid">
+</center>
+<ul>
+<li>Esses três bytes necessários para representar as diferentes intensidades de vermelho, azul e verde (RGB) formam um pixel (ponto de cor). Imagens digitais nada mais são do que grandes matrizes de valores RGB.</li>
+<li>Zeros e uns também podem ser usados para representar vídeos e músicas!</li>
+</ul>
+</section>
+</section>
+<section id="algoritmos" class="level2">
+<h2 class="anchored" data-anchor-id="algoritmos">Algoritmos</h2>
+<ul>
+<li>A resolução de problemas é o coração da Ciência da Computação. Um <strong>algoritmo</strong> é um conjunto de instruções passo a passo para resolver um desafio.</li>
+<li>Imagine um problema simples de buscar um nome em uma lista telefônica. Como resolver esse problema?</li>
+<li>Uma abordagem seria ler página por página, do início ao fim.</li>
+<li>Outra possibilidade seria verificar duas páginas por vez.</li>
+<li>A final and perhaps better approach could be to go to the middle of the phone book and ask, “Is the name I am looking for to the left or to the right?” Then, repeat this process, cutting the problem in half and half and half.</li>
+<li>Cada uma dessas estratégias é um algoritmo. Programadores transformam instruções humanas em código para que o computador execute o algoritmo.</li>
+</ul>
+</section>
+<section id="pseudocódigo" class="level2">
+<h2 class="anchored" data-anchor-id="pseudocódigo">Pseudocódigo</h2>
+<ul>
+<li>O pseudocódigo é uma forma de descrever algoritmos usando linguagem próxima da linguagem humana, mas organizada como código.</li>
+<li>Considere o terceiro algoritmo usado para resolver o problema da lista telefônica. Poderíamos escrever o pseudocódigo da seguinte maneira:</li>
+</ul>
+<pre class="{plain}"><code>1  Pegue a lista telefônica
+2  Abra no meio da lista
+3  Observe a página
+4  Se a pessoa estiver na página
+5      Ligue para a pessoa
+6  Senão, se a pessoa estiver antes
+7      Abra no meio da metade esquerda
+8      Volte para a linha 3
+9  Senão, se a pessoa estiver depois
+10     Abra no meio da metade direita
+11     Volte para a linha 3
+12 Senão
+13     Pare</code></pre>
+<ul>
+<li>Pseudocódigo é importante por duas razões. Primeiro, ele permite pensar na lógica antes de escrever código formal. Segundo, ele ajuda outras pessoas a entenderem seu raciocínio.</li>
+<li>Observe que a linguagem utilizada em nosso pseudocódigo possui algumas características específicas. Primeiro, algumas linhas começam com verbos como “pegue”, “abra” ou “observe”. Mais adiante, chamaremos essas ações de <strong>funções</strong>.</li>
+<li>Em segundo lugar, note que algumas linhas incluem instruções como <code>se</code> ou <code>senão</code>. Essas estruturas são chamadas de <strong>condicionais</strong>.</li>
+<li>Em terceiro lugar, perceba que há expressões que podem ser avaliadas como verdadeiras ou falsas, como “a pessoa está antes no livro”. Chamamos essas de expressões <strong>booleanas</strong>.</li>
+<li>Por fim, observe que existem instruções como “volte para a linha 3”. Essas estruturas são chamadas de <strong>loops</strong> (laços de repetição).</li>
+<li>Esses blocos de construção são os fundamentos da programação.</li>
+<li>No contexto de Python, que é discutido neste curso, utilizaremos cada um desses elementos básicos da programação.</li>
+</ul>
+</section>
+<section id="o-que-vem-pela-frente" class="level2">
+<h2 class="anchored" data-anchor-id="o-que-vem-pela-frente">O que vem pela frente?</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>dasdas</p>
+</div>
+</div>
+<div id="bb2afa54" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">input</span>(<span class="st">"What's your name? "</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-error">
+<div class="ansi-escaped-output">
+<pre><span class="ansi-cyan-fg">  Cell </span><span class="ansi-green-fg">In[6], line 1</span>
+
+<span class="ansi-red-fg">    print("Hello Worl)</span>
+
+          ^
+
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> unterminated string literal (detected at line 1)
+</pre>
+</div>
+</div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

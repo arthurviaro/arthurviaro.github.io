@@ -1,0 +1,149 @@
+[
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "CV",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "teaching/eae1106/index.html",
+    "href": "teaching/eae1106/index.html",
+    "title": "Arthur Viaro",
+    "section": "",
+    "text": "EAE1106 - Métodos Computacionais para Economia\nFaculdade de Economia, Administração, Contabilidade e Atuária Universidade de São Paulo\n1º semestre de 2026\nProfessor: Arthur Viaro Atendimento: Sala 230, FEA 2. Link para agendamento. Aulas: Laboratório 312, FEA 5 Turma 121 - ter 19:30-21:10 / qui 21:20-23:00 Turma 122 - ter 21:20-23:00 / qui 19:30-21:10\nClique aqui para baixar o programa em PDF."
+  },
+  {
+    "objectID": "teaching/eae1106/index.html#descrição",
+    "href": "teaching/eae1106/index.html#descrição",
+    "title": "Arthur Viaro",
+    "section": "Descrição",
+    "text": "Descrição\n\nA disciplina tem o objetivo de introduzir os estudantes ao raciocínio computacional, aos conceitos relevantes de computação, e às suas aplicações para resolver problemas relevantes no campo da Economia. Para tanto, o curso utilizará a linguagem Python, amplamente utilizada em diversas áreas das ciências. Espera-se que ao final do curso o estudante tenha, além do domínio sobre a sintaxe da linguagem utilizada no curso, capacidade de formular e resolver problemas utilizando recursos computacionais."
+  },
+  {
+    "objectID": "teaching/eae1106/index.html#programa-do-curso",
+    "href": "teaching/eae1106/index.html#programa-do-curso",
+    "title": "Arthur Viaro",
+    "section": "Programa do Curso",
+    "text": "Programa do Curso\n\nFundamentos da Computação e Algoritmos\nIntrodução ao Python\nTipos de Dados e Expressões\nControle de Fluxo e Iteração\nFunções\nProgramação Orientada a Objetos\nAplicações I: Dados\nAplicações II: Visualização de Dados\nIntrodução ao R\n\nConsulte o cronograma detalhado (sujeito a alterações): Plano de aulas"
+  },
+  {
+    "objectID": "teaching/eae1106/index.html#critérios-de-avaliação",
+    "href": "teaching/eae1106/index.html#critérios-de-avaliação",
+    "title": "Arthur Viaro",
+    "section": "Critérios de Avaliação",
+    "text": "Critérios de Avaliação\n\nA avaliação da disciplina será composta por:\n\n\n\n\n\n\n\n\nAtividade\nPeso\nDetalhes\n\n\n\n\nLista de exercícios\n20%\nEntregas individuais via Moodle\n\n\nProva intermediária\n30%\nAvaliação individual em sala de aula\n\n\nTrabalho final\n50%\nProjeto aplicado em grupo (máx. 5 pessoas)\n\n\n\nO trabalho final consistirá em um projeto aplicado de análise de dados, a ser desenvolvido em grupo e entregue ao final do semestre. Os estudantes que não alcançarem média final igual ou superior a 5,0 deverão realizar prova de reavaliação, conforme previsto no regimento da faculdade.\nOs grupos deverão ter no máximo 5 alunos e deverão ser informados até o dia 15/abr. As instruções detalhadas para a elaboração do trabalho serão divulgadas nessa mesma data. O relatório final deverá ser entregue em formato PDF, até às 23h59 do dia 10/jun, exclusivamente por meio do sistema Moodle. A avaliação do trabalho ocorrerá durante as apresentações, que serão realizadas nos dois últimos encontros do semestre, conforme previsto no plano de aulas. Cada grupo terá 20 minutos para a apresentação e TODOS os membros do grupo devem estar presentes. O membro do grupo que não comparecer à aula de apresentação terá sua nota zerada."
+  },
+  {
+    "objectID": "teaching/eae1106/index.html#horário-de-atendimento",
+    "href": "teaching/eae1106/index.html#horário-de-atendimento",
+    "title": "Arthur Viaro",
+    "section": "Horário de Atendimento",
+    "text": "Horário de Atendimento\n\nOs atendimentos podem ser agendados por meio do link de agendamento. O agendamento prévio não é obrigatório, mas é recomendado. Caso mais de uma pessoa procure atendimento no mesmo horário, terá prioridade quem tiver feito o agendamento antecipadamente. Além disso, o agendamento evita desencontros e garante que o professor estará disponível no momento da chegada do aluno. O horário reservado é tratado como um compromisso. Portanto, por favor, agende apenas se tiver certeza de que poderá comparecer.\nE-mail: arthur.viaro@usp.br Atendimento: Sala 230, FEA 2"
+  },
+  {
+    "objectID": "teaching/eae1106/index.html#bibliografia",
+    "href": "teaching/eae1106/index.html#bibliografia",
+    "title": "Arthur Viaro",
+    "section": "Bibliografia",
+    "text": "Bibliografia\n\nMaterial preparado pelo Prof. Danilo Souza para a disciplina: https://danilosouza-usp.github.io/eae1106/\nDowney, A. B. (2016). Pense em Python: Pense como um Cientista da Computação. O’Reilly, 2ª edição\nGuttag, J. (2021). Introduction to Computation and Programming Using Python: With Application to Computational Modeling and Understanding Data. The MIT Press, 3ª edição.\nMcKinney, W. (2018). Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython. O’Reilly, 2ª edição.\nT. J. Sargent e J. Stachurski. “Python Programming for Economics and Finance”. https://python-programming.quantecon.org/intro.html"
+  },
+  {
+    "objectID": "teaching/eae1106/index.html#material-do-curso",
+    "href": "teaching/eae1106/index.html#material-do-curso",
+    "title": "Arthur Viaro",
+    "section": "Material do Curso",
+    "text": "Material do Curso\nLinks serão adicionados conforme disponibilização.\n\nNotebooks\n\nAula 01: Introdução\nAula 02: Fundamentos de Computação\n\n\n\nListas de Exercícios\nAs listas devem ser entregues através do Moodle.\n\nLista 1: Entrega xx/xx, às 23h59"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Arthur Viaro",
+    "section": "",
+    "text": "I am an Assistant Professor of Economics at the University of São Paulo (FEA-USP).\nMy research lies at the intersection of Development Economics and Economic History, with a particular focus on institutional and political change in Brazil during the early twentieth century and its implications for long-term development.\nResearch Interests Development Economics, Economic History, Political Economy\nContact Information arthur.viaro@gmail.com Department of Economics – University of São Paulo FEA 2 Building, Office 230 Av. Professor Luciano Gualberto, 908 São Paulo, SP - 05508-010, Brazil"
+  },
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "FEA-USP\n\nEAE1106 - Computational Methods for Economics (Undergraduate), 2026 - Syllabus in portuguese\n\nInsper\n\nMicroeconomics II (Undergraduate), 2025\nInternational Economics (Undergraduate), 2022-2025\nPrinciples of Macroeconomics (Undergraduate), 2024 \n\nSão Paulo School of Economics (EESP-FGV)\n\nPublic Economics (Undergraduate), 2023\nStatistics I (Undergraduate), 2023\nProjects II (Undergraduate), 2022\nMicroeconomics II (Undergraduate), 2022\nIntroduction to Economics (Undergraduate), 2022-2023"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Arthur Viaro",
+    "section": "",
+    "text": "Trade Shocks and Human Capital: Evidence from Brazil’s Trade Liberalization  (with Marcos Nakaguma)    Revise & Resubmit Journal of International Economics  \nHow Immigration Shapes Politics: Populism, Labor Movements, and Political Preferences in Brazil  (with Marcos Nakaguma and Thales Pereira) \nFiscal Capacity and the Provision of Public Goods in Brazil, 1891-1930"
+  },
+  {
+    "objectID": "research.html#working-papers",
+    "href": "research.html#working-papers",
+    "title": "Arthur Viaro",
+    "section": "",
+    "text": "Trade Shocks and Human Capital: Evidence from Brazil’s Trade Liberalization  (with Marcos Nakaguma)    Revise & Resubmit Journal of International Economics  \nHow Immigration Shapes Politics: Populism, Labor Movements, and Political Preferences in Brazil  (with Marcos Nakaguma and Thales Pereira) \nFiscal Capacity and the Provision of Public Goods in Brazil, 1891-1930"
+  },
+  {
+    "objectID": "research.html#work-in-progress",
+    "href": "research.html#work-in-progress",
+    "title": "Arthur Viaro",
+    "section": "Work in Progress",
+    "text": "Work in Progress\n\nSugarcane Expansion and Development: Evidence from São Paulo  (with Yuri Luz and Marcos Nakaguma) \nRailroad Expansion and Mortality in Early Twentieth-Century Brazil  (with Darcio Genicolo) \nBroadcasting Populism: Radio and Mass Politics in Brazil\nPolitical Power and State Capacity in Early Twentieth-Century Brazil"
+  },
+  {
+    "objectID": "teaching/eae1106/cronograma.html",
+    "href": "teaching/eae1106/cronograma.html",
+    "title": "Arthur Viaro",
+    "section": "",
+    "text": "EAE1106 - Métodos Computacionais para Economia\nFaculdade de Economia, Administração, Contabilidade e Atuária Universidade de São Paulo\n1º semestre de 2026"
+  },
+  {
+    "objectID": "teaching/eae1106/cronograma.html#plano-de-aulas",
+    "href": "teaching/eae1106/cronograma.html#plano-de-aulas",
+    "title": "Arthur Viaro",
+    "section": "Plano de Aulas",
+    "text": "Plano de Aulas\nCronograma sujeito a alterações\n\n\n\n\n\n\n\n\n\n\n\nSemana\n\n\nData\n\n\nTema\n\n\nConteúdo\n\n\n\n\n\n\n\n1\n\n\n24/fev\n\n\nFundamentos de computação\n\n\nComo os computadores pensam?\n\n\n\n\n\n\n26/fev\n\n\nFundamentos de computação\n\n\nDiretórios; Terminal; Linguagens de Programação\n\n\n\n\n\n2\n\n\n03/mar\n\n\nPrimeiros Passos no Python\n\n\nInstalação; IDEs; Bibliotecas\n\n\n\n\n\n\n05/mar\n\n\nTipos de Dados e Expressões\n\n\nTipos (int, float, str, bool); Indexação\n\n\n\n\n\n3\n\n\n10/mar\n\n\nTipos de Dados e Expressões\n\n\nListas; Tuplas\n\n\n\n\n\n\n12/mar\n\n\nTipos de Dados e Expressões\n\n\nDicionários\n\n\n\n\n\n4\n\n\n17/mar\n\n\nControle de Fluxo e Iteração\n\n\nCondicionais (if, elif, else, or, and, bool)\n\n\n\n\n\n\n19/mar\n\n\nControle de Fluxo e Iteração\n\n\nLoops (while, for, list, range, continue, break)\n\n\n\n\n\n5\n\n\n24/mar\n\n\nFunções\n\n\nFunções built-in e personalizadas; Argumentos\n\n\n\n\n\n\n26/mar\n\n\nFunções\n\n\nRetorno; Documentação; Funções anônimas\n\n\n\n\n\n6\n\n\n31/mar\n\n\nSemana Santa\n\n\nNão haverá aula\n\n\n\n\n\n\n02/abr\n\n\nSemana Santa\n\n\nNão haverá aula\n\n\n\n\n\n7\n\n\n07/abr\n\n\nExceções (Leitura de Erros)\n\n\nSyntaxError, ValueError, try, except, NameError, else, pass\n\n\n\n\n\n\n09/abr\n\n\nExpressões Regulares\n\n\nre, re.search, re.match, re.findall, re.split\n\n\n\n\n\n8\n\n\n14/abr\n\n\nRevisão\n\n\nRevisão\n\n\n\n\n\n\n16/abr\n\n\nProva Intermediária\n\n\nProva Intermediária\n\n\n\n\n\n9\n\n\n21/abr\n\n\nFeriado: Tiradentes\n\n\nNão haverá aula\n\n\n\n\n\n\n23/abr\n\n\nProgramação Orientada a Objetos\n\n\nClasses; Atributos\n\n\n\n\n\n10\n\n\n28/abr\n\n\nCálculos Numéricos e Álgebra Linear\n\n\nNumpy; Arrays\n\n\n\n\n\n\n30/abr\n\n\nCálculos Numéricos e Álgebra Linear\n\n\nVetores; Matrizes; Operações básicas\n\n\n\n\n\n11\n\n\n05/mai\n\n\nCálculos Numéricos e Álgebra Linear\n\n\nOperações avançadas; Ferramentas de álgebra linear\n\n\n\n\n\n\n07/mai\n\n\nAplicações I: Dados\n\n\nPandas; Séries; Dataframes; Indexação\n\n\n\n\n\n12\n\n\n12/mai\n\n\nAplicações I: Dados\n\n\nImportação e exportação de dados; Operações com colunas; Merge\n\n\n\n\n\n\n14/mai\n\n\nAplicações I: Dados\n\n\nAgrupamento; Reshape; Eficiência; dtypes\n\n\n\n\n\n13\n\n\n19/mai\n\n\nAplicações II: Visualização de Dados\n\n\nGráficos com Matplotlib\n\n\n\n\n\n\n21/mai\n\n\nAplicações II: Visualização de Dados\n\n\nGráficos com Seaborn e Plotly\n\n\n\n\n\n14\n\n\n26/mai\n\n\nProjeto: Análise Empírica\n\n\nReplicabilidade e boas práticas; Limpeza de dados\n\n\n\n\n\n\n28/mai\n\n\nProjeto: Análise Empírica\n\n\nOperações com dataframes; Correção de missings; Análises descritivas\n\n\n\n\n\n15\n\n\n02/jun\n\n\nIntrodução ao R\n\n\nSintaxe; Objetos; Semelhanças com Python\n\n\n\n\n\n\n04/jun\n\n\nFeriado: Corpus Christi\n\n\nNão haverá aula\n\n\n\n\n\n16\n\n\n09/jun\n\n\nIntrodução ao R\n\n\nTidyverse\n\n\n\n\n\n\n11/jun\n\n\nIntrodução ao R\n\n\nVisualização de dados\n\n\n\n\n\n17\n\n\n16/jun\n\n\nApresentação de Trabalhos\n\n\nApresentações em grupo\n\n\n\n\n\n\n18/jun\n\n\nApresentação de Trabalhos\n\n\nApresentações em grupo"
+  },
+  {
+    "objectID": "teaching/eae1106/notebooks/01-introducao.html",
+    "href": "teaching/eae1106/notebooks/01-introducao.html",
+    "title": "Aula 1 - Fundamentos de Computação",
+    "section": "",
+    "text": "EAE1106 - Métodos Computacionais para Economia\nFaculdade de Economia, Administração, Contabilidade e Atuária  Universidade de São Paulo\nProf. Arthur Viaro  1º semestre - 2026"
+  },
+  {
+    "objectID": "teaching/eae1106/notebooks/01-introducao.html#ciência-da-computação-e-resolução-de-problemas",
+    "href": "teaching/eae1106/notebooks/01-introducao.html#ciência-da-computação-e-resolução-de-problemas",
+    "title": "Aula 1 - Fundamentos de Computação",
+    "section": "Ciência da Computação e Resolução de Problemas",
+    "text": "Ciência da Computação e Resolução de Problemas\n\nEssencialmente, a programação de computadores consiste em receber uma entrada (input) e produzir uma saída (output) — ou seja, resolver um problema. O que acontece entre a entrada e a saída, o que podemos chamar de “caixa-preta”, é o foco a ciência da computação."
+  },
+  {
+    "objectID": "teaching/eae1106/notebooks/01-introducao.html#como-os-computadores-pensam",
+    "href": "teaching/eae1106/notebooks/01-introducao.html#como-os-computadores-pensam",
+    "title": "Aula 1 - Fundamentos de Computação",
+    "section": "Como os Computadores “Pensam”?",
+    "text": "Como os Computadores “Pensam”?\n\nPara resolver problemas, precisamos de uma forma de representar informações. Imagine que precisamos registrar a presença em uma turma.\nUma maneira simples seria usar o sistema unário (base 1) - como levantar um dedo ou fazer um risco no papel para cada pessoa presente.\nComputadores operam de forma diferente, utilizando o sistema binário (base 2). É da abreviação de “binary digit” que surge o termo bit.\nUm bit é a menor unidade de informação. Ele funciona como uma lâmpada, podendo assumir apenas dois valores: 0 (desligado) ou 1 (ligado).\nUma única “lâmpada” (ou bit) só nos permite contar até 1. No entanto, quando combinamos várias delas, o poder de representação cresce significativamente.\nFisicamente, isso é realizado por milhões de transistores dentro do seu dispositivo (como um iPhone ou PC) que agem como interruptores: ligados e desligados.\n\n\nSistema Binário\n\nSuponha que queremos começar a contar usando o sistema binário, ou seja, usando apenas zeros e uns. Como um computador entende que uma sequência de 0s e 1s representa o número 5 ou 137?\nUsamos um sistema de pesos posicionais! Por exemplo, podemos atribuir um valor a cada posição possível em nosso dígito binário: 4, 2 e 1\nUtilizando três bits, a representação do número zero seria:\n\n\n\n\n\n4\n2\n1\n\n\n\n\n0\n0\n0\n\n\n\n\n\nAnalogamente, a representação do número um seria:\n\n\n\n\n\n4\n2\n1\n\n\n\n\n0\n0\n1\n\n\n\n\n\nUsando essa mesma lógica, poderíamos propor a seguinte representação do número dois:\n\n\n\n\n\n4\n2\n1\n\n\n\n\n0\n1\n0\n\n\n\n\n\nA representação do número três seria dada por:\n\n\n\n\n\n4\n2\n1\n\n\n\n\n0\n1\n1\n\n\n\n\n\nO número quatro seria representado da seguinte maneira:\n\n\n\n\n\n4\n2\n1\n\n\n\n\n1\n0\n0\n\n\n\n\n\nUtilizando apenas três bits, o valor máximo que conseguimos alcançar é sete!\n\n\n\n\n\n4\n2\n1\n\n\n\n\n1\n1\n1\n\n\n\n\n\nPode parecer estranho no início, mas você já utiliza essa lógica todos os dias sem perceber! A estrutura que usamos para o sistema binário é exatamente a mesma que usamos para contar no nosso cotidiano.\nEstamos acostumados a lidar com o sistema decimal (base 10), que possui dez dígitos à disposição: 0, 1, 2, 3, 4, 5, 6, 7, 8 e 9.\nAssim, quando escrevemos o número 123, estamos na verdade seguindo um sistema de “posições” baseados em potências de 10:\n\n\n\n\n\n\\(10^2\\)\n\\(10^1\\)\n\\(10^0\\)\n\n\n\n\n(100)\n(10)\n(1)\n\n\n1\n2\n3\n\n\n\n\n\n100 \\(\\times\\) 1 + 10 \\(\\times\\) 2 + 1 \\(\\times\\) 3\n\n\nAssim, não importa se estamos usando a base decimal ou binária; o funcionamento é o mesmo. A única coisa que muda é a base da potência!\nEnquanto no sistema decimal as posições são potências de 10:\n\n\n\n\n\n\\(10^2\\)\n\\(10^1\\)\n\\(10^0\\)\n\n\n\n\n#\n#\n#\n\n\n\n\n\nNo sistema dos computadores (base 2), as posições são potências de 2:\n\n\n\n\n\n\\(2^2\\)\n\\(2^1\\)\n\\(2^0\\)\n\n\n\n\n#\n#\n#\n\n\n\n\n\nNote que, no sistema binário, precisamos de três bits (as casas do quatro, do dois e do um) para representar todos os números no intervalo de 0 a 7.\nPara representar o número 8, precisamos adicionar um quarto bit, correspondente à casa \\(2^3\\):\n\n\n\n\n\n\\(2^3\\)\n\\(2^2\\)\n\\(2^1\\)\n\\(2^0\\)\n\n\n\n\n1\n0\n0\n0\n\n\n\n\n\nGeralmente, os computadores processam conjuntos de oito bits, conhecidos como byte. Com oito posições, conseguimos representar uma gama muito maior de valores!\n\n\n\n\n\n\n\n\n\n\nNúmero decimal\nNúmero binário\nCálculo para conversão\n\n\n\n\n0\n00000000\n\\(0\\cdot 2^7 + 0\\cdot 2^6 + 0\\cdot 2^5 + 0\\cdot 2^4 + 0\\cdot 2^3 + 0\\cdot 2^2 + 0\\cdot 2^1 + 0\\cdot 2^0 = 0\\)\n\n\n1\n00000001\n\\(0\\cdot 2^7 + 0\\cdot 2^6 + 0\\cdot 2^5 + 0\\cdot 2^4 + 0\\cdot 2^3 + 0\\cdot 2^2 + 0\\cdot 2^1 + 1\\cdot 2^0 = 1\\)\n\n\n5\n00000101\n\\(0\\cdot 2^7 + 0\\cdot 2^6 + 0\\cdot 2^5 + 0\\cdot 2^4 + 0\\cdot 2^3 + 1\\cdot 2^2 + 0\\cdot 2^1 + 1\\cdot 2^0 = 5\\)\n\n\n48\n00110000\n\\(0\\cdot 2^7 + 0\\cdot 2^6 + 1\\cdot 2^5 + 1\\cdot 2^4 + 0\\cdot 2^3 + 0\\cdot 2^2 + 0\\cdot 2^1 + 0\\cdot 2^0 = 48\\)\n\n\n137\n10001001\n\\(1\\cdot 2^7 + 0\\cdot 2^6 + 0\\cdot 2^5 + 0\\cdot 2^4 + 1\\cdot 2^3 + 0\\cdot 2^2 + 0\\cdot 2^1 + 1\\cdot 2^0 = 137\\)\n\n\n255\n11111111\n\\(1\\cdot 2^7 + 1\\cdot 2^6 + 1\\cdot 2^5 + 1\\cdot 2^4 + 1\\cdot 2^3 + 1\\cdot 2^2 + 1\\cdot 2^1 + 1\\cdot 2^0 = 255\\)\n\n\n\n\n\n\nASCII\n\nAssim como os números são representados por padrões binários de zeros e uns, as letras também são representadas por combinações de zeros e uns!\nComo existe sobreposição entre os padrões binários que representam números e os que representam letras, foi criado um padrão chamado ASCII (American Standard Code for Information Interchange).\nO ASCII associa números específicos a caracteres específicos, permitindo que computadores representem texto de forma padronizada.\nPor exemplo, a letra A foi associada ao número 65. No sistema binário, o número 65 é representado por 01000001. Podemos visualizar da seguinte maneira:\n\n\n\n\n\n128\n64\n32\n16\n8\n4\n2\n1\n\n\n\n\n0\n1\n0\n0\n0\n0\n0\n1\n\n\n\n\n\nSe você recebesse uma mensagem de texto cujo conteúdo binário representasse os números 72, 73 e 33, ao convertê-los usando a tabela ASCII teríamos:\n\n\n\n\n\nH\nI\n!\n\n\n\n\n72\n73\n33\n\n\n\n\n\nFelizmente, padrões como o ASCII permitem que todos os computadores “concordem” sobre qual número representa qual caractere. A seguir, um mapa dos valores ASCII:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n0\nNUL\n16\nDLE\n32\nSP\n48\n0\n64\n@\n80\nP\n96\n`\n112\np\n\n\n1\nSOH\n17\nDC1\n33\n!\n49\n1\n65\nA\n81\nQ\n97\na\n113\nq\n\n\n2\nSTX\n18\nDC2\n34\n”\n50\n2\n66\nB\n82\nR\n98\nb\n114\nr\n\n\n3\nETX\n19\nDC3\n35\n#\n51\n3\n67\nC\n83\nS\n99\nc\n115\ns\n\n\n4\nEOT\n20\nDC4\n36\n$\n52\n4\n68\nD\n84\nT\n100\nd\n116\nt\n\n\n5\nENQ\n21\nNAK\n37\n%\n53\n5\n69\nE\n85\nU\n101\ne\n117\nu\n\n\n6\nACK\n22\nSYN\n38\n&\n54\n6\n70\nF\n86\nV\n102\nf\n118\nv\n\n\n7\nBEL\n23\nETB\n39\n’\n55\n7\n71\nG\n87\nW\n103\ng\n119\nw\n\n\n8\nBS\n24\nCAN\n40\n(\n56\n8\n72\nH\n88\nX\n104\nh\n120\nx\n\n\n9\nHT\n25\nEM\n41\n)\n57\n9\n73\nI\n89\nY\n105\ni\n121\ny\n\n\n10\nLF\n26\nSUB\n42\n*\n58\n:\n74\nJ\n90\nZ\n106\nj\n122\nz\n\n\n11\nVT\n27\nESC\n43\n+\n59\n;\n75\nK\n91\n[\n107\nk\n123\n{\n\n\n12\nFF\n28\nFS\n44\n,\n60\n&lt;\n76\nL\n92\n\\\n108\nl\n124\n|\n\n\n13\nCR\n29\nGS\n45\n-\n61\n=\n77\nM\n93\n]\n109\nm\n125\n}\n\n\n14\nSO\n30\nRS\n46\n.\n62\n&gt;\n78\nN\n94\n^\n110\nn\n126\n~\n\n\n15\nSI\n31\nUS\n47\n/\n63\n?\n79\nO\n95\n_\n111\no\n127\nDEL\n\n\n\nObservações\n\nCada caractere ASCII ocupa 1 byte (8 bits).\nCom 8 bits, é possível representar até 256 valores diferentes (0–255).\nO ASCII padrão utiliza apenas 128 valores (0–127).\n\n\n\nUNICODE\n\nCom a evolução da comunicação global, o limite de 256 caracteres do padrão ASCII tornou-se insuficiente.\nO padrão Unicode surgiu para expandir a quantidade de bits utilizados, permitindo representar virtualmente todos os sistemas de escrita da humanidade, além de símbolos e emojis.\n😀 😃 😄 😁 😆 😅 😂 🙂 🙃 😉 😊 😇 😍 😘 😗 😙 😚 😋 😛 😜 😝 🤑 🤓 😎 🤗 😏 😶 😐 😑 😒 🙄 😬 😕 ☹️ 😟 😮 😯 😲 😳 😦 😧 😨\nEmbora o padrão binário (o código) seja universal, cada fabricante (Apple, Google, Microsoft) pode estilizar visualmente o emoji de forma diferente.\nO Unicode continua em expansão, adicionando novos caracteres e emojis regularmente para refletir a diversidade cultural e tecnológica.\n\n\n\nRGB\n\nZeros e uns também definem cores através do sistema RGB (Red, Green, Blue). Cada cor é uma combinação de três intensidades numéricas que variam de 0 a 255 (8 bits).\nRed, green, and blue (called RGB) are a combination of three numbers.\n\n\n\n\n\nOs mesmos números do “HI!” (72, 73, 33) seriam interpretados por um leitor de imagem como um tom de amarelo musgo (R=72, G=73, B=33).\n\n\n\n\n\nEsses três bytes necessários para representar as diferentes intensidades de vermelho, azul e verde (RGB) formam um pixel (ponto de cor). Imagens digitais nada mais são do que grandes matrizes de valores RGB.\nZeros e uns também podem ser usados para representar vídeos e músicas!"
+  },
+  {
+    "objectID": "teaching/eae1106/notebooks/01-introducao.html#algoritmos",
+    "href": "teaching/eae1106/notebooks/01-introducao.html#algoritmos",
+    "title": "Aula 1 - Fundamentos de Computação",
+    "section": "Algoritmos",
+    "text": "Algoritmos\n\nA resolução de problemas é o coração da Ciência da Computação. Um algoritmo é um conjunto de instruções passo a passo para resolver um desafio.\nImagine um problema simples de buscar um nome em uma lista telefônica. Como resolver esse problema?\nUma abordagem seria ler página por página, do início ao fim.\nOutra possibilidade seria verificar duas páginas por vez.\nA final and perhaps better approach could be to go to the middle of the phone book and ask, “Is the name I am looking for to the left or to the right?” Then, repeat this process, cutting the problem in half and half and half.\nCada uma dessas estratégias é um algoritmo. Programadores transformam instruções humanas em código para que o computador execute o algoritmo."
+  },
+  {
+    "objectID": "teaching/eae1106/notebooks/01-introducao.html#pseudocódigo",
+    "href": "teaching/eae1106/notebooks/01-introducao.html#pseudocódigo",
+    "title": "Aula 1 - Fundamentos de Computação",
+    "section": "Pseudocódigo",
+    "text": "Pseudocódigo\n\nO pseudocódigo é uma forma de descrever algoritmos usando linguagem próxima da linguagem humana, mas organizada como código.\nConsidere o terceiro algoritmo usado para resolver o problema da lista telefônica. Poderíamos escrever o pseudocódigo da seguinte maneira:\n\n1  Pegue a lista telefônica\n2  Abra no meio da lista\n3  Observe a página\n4  Se a pessoa estiver na página\n5      Ligue para a pessoa\n6  Senão, se a pessoa estiver antes\n7      Abra no meio da metade esquerda\n8      Volte para a linha 3\n9  Senão, se a pessoa estiver depois\n10     Abra no meio da metade direita\n11     Volte para a linha 3\n12 Senão\n13     Pare\n\nPseudocódigo é importante por duas razões. Primeiro, ele permite pensar na lógica antes de escrever código formal. Segundo, ele ajuda outras pessoas a entenderem seu raciocínio.\nObserve que a linguagem utilizada em nosso pseudocódigo possui algumas características específicas. Primeiro, algumas linhas começam com verbos como “pegue”, “abra” ou “observe”. Mais adiante, chamaremos essas ações de funções.\nEm segundo lugar, note que algumas linhas incluem instruções como se ou senão. Essas estruturas são chamadas de condicionais.\nEm terceiro lugar, perceba que há expressões que podem ser avaliadas como verdadeiras ou falsas, como “a pessoa está antes no livro”. Chamamos essas de expressões booleanas.\nPor fim, observe que existem instruções como “volte para a linha 3”. Essas estruturas são chamadas de loops (laços de repetição).\nEsses blocos de construção são os fundamentos da programação.\nNo contexto de Python, que é discutido neste curso, utilizaremos cada um desses elementos básicos da programação."
+  },
+  {
+    "objectID": "teaching/eae1106/notebooks/01-introducao.html#o-que-vem-pela-frente",
+    "href": "teaching/eae1106/notebooks/01-introducao.html#o-que-vem-pela-frente",
+    "title": "Aula 1 - Fundamentos de Computação",
+    "section": "O que vem pela frente?",
+    "text": "O que vem pela frente?\n\n\n\n\n\n\nNote\n\n\n\ndasdas\n\n\n\ninput(\"What's your name? \")\n\n\n  Cell In[6], line 1\n\n    print(\"Hello Worl)\n\n          ^\n\nSyntaxError: unterminated string literal (detected at line 1)"
+  }
+]
