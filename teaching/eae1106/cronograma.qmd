@@ -1,0 +1,304 @@
+---
+title: ""
+---
+
+<p style="text-align: center; margin-bottom: 0; font-size: 24px;">
+**EAE1106 - Métodos Computacionais para Economia**
+</p>
+
+<p style="text-align: center; margin-bottom: 0;">
+Faculdade de Economia, Administração, Contabilidade e Atuária<br>
+Universidade de São Paulo
+</p>
+<p style="text-align: center; margin-top: 5px;">
+1º semestre de 2026
+</p>
+
+---
+
+## Plano de Aulas
+
+*Cronograma sujeito a alterações*
+
+<style>
+  .schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+
+  .schedule-table th,
+  .schedule-table td {
+    padding: 8px 10px;
+    vertical-align: middle;
+  }
+
+  .schedule-table thead th {
+    background: #f2f2f2;
+    text-align: left;
+    border-bottom: 2px solid #000;
+  }
+
+  /* centraliza colunas Semana e Data */
+  .center-col { text-align: center; }
+
+  /* zebra */
+  .schedule-table tbody tr:nth-child(odd) { background: #ffffff; }
+  .schedule-table tbody tr:nth-child(even) { background: #fbfbfb; }
+
+  /* linha separadora ao fim de cada semana */
+  .week-end td { border-bottom: 1px solid #999; }
+
+  /* avaliacao (semana santa) */
+  .holiday .holiday-text { color: #000; font-weight: 600; }
+
+  /* feriado (semana santa) */
+  .exam { background-color: #e8e8e8 !important; }
+  .exam .exam-text { color: #c00; font-weight: 600; }
+
+  /* bordas sutis para todo o corpo (opcional) */
+  .schedule-table td { border-top: 1px solid transparent; }
+</style>
+
+<table class="schedule-table" aria-label="Plano de aulas">
+  <colgroup>
+    <col style="width:3%;">
+    <col style="width:10%;">
+    <col style="width:40%;">
+    <col style="width:47%;">
+  </colgroup>
+
+  <thead>
+    <tr>
+      <th class="center-col">Semana</th>
+      <th class="center-col">Data</th>
+      <th>Tema</th>
+      <th>Conteúdo</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <!-- Semana 1 (Introdução e Primeiros Passos no Python) -->
+    <tr>
+      <td class="center-col">1</td>
+      <td class="center-col">24/fev</td>
+      <td>Fundamentos de computação</td>
+      <td>Como os computadores pensam?</td>
+    </tr>
+    <tr class="week-end">
+      <td class="center-col"></td>
+      <td class="center-col">26/fev</td>
+      <td>Fundamentos de computação</td>
+      <td>Diretórios; Terminal; Linguagens de Programação</td>
+    </tr>
+    <!-- Semana 2 (Tipos de Dados e Expressões) -->
+    <tr>
+      <td class="center-col">2</td>
+      <td class="center-col">03/mar</td>
+      <td>Primeiros Passos no Python</td>
+      <td>Instalação; IDEs; Bibliotecas</td>
+    </tr>
+    <tr class="week-end">
+      <td class="center-col"></td>
+      <td class="center-col">05/mar</td>
+      <td>Tipos de Dados e Expressões</td>
+      <td>Tipos (int, float, str, bool); Indexação</td>
+    </tr>
+    <!-- Semana 3 (Tipos de Dados e Expressões) -->
+    <tr>
+      <td class="center-col">3</td>
+      <td class="center-col">10/mar</td>
+      <td>Tipos de Dados e Expressões</td>
+      <td>Listas; Tuplas</td>
+    </tr>
+    <tr class="week-end">
+      <td class="center-col"></td>
+      <td class="center-col">12/mar</td>
+      <td>Tipos de Dados e Expressões</td>
+      <td>Dicionários</td>
+    </tr>
+    <!-- Semana 4 (Controle de Fluxo e Iteração) -->
+    <tr>
+      <td class="center-col">4</td>
+      <td class="center-col">17/mar</td>
+      <td>Controle de Fluxo e Iteração</td>
+      <td>Condicionais (if, elif, else, or, and, bool)</td>
+    </tr>
+    <tr class="week-end">
+      <td class="center-col"></td>
+      <td class="center-col">19/mar</td>
+      <td>Controle de Fluxo e Iteração</td>
+      <td>Loops (while, for, list, range, continue, break)</td>
+    </tr>
+    <!-- Semana 5 (Funções) -->
+    <tr>
+      <td class="center-col">5</td>
+      <td class="center-col">24/mar</td>
+      <td>Funções</td>
+      <td>Funções built-in e personalizadas; Argumentos</td>
+    </tr>
+    <tr class="week-end">
+      <td class="center-col"></td>
+      <td class="center-col">26/mar</td>
+      <td>Funções</td>
+      <td>Retorno; Documentação; Funções anônimas</td>
+    </tr>
+    <!-- Semana 6 (Feriado) -->
+    <tr class="holiday">
+      <td class="center-col holiday-text">6</td>
+      <td class="center-col holiday-text">31/mar</td>
+      <td><span class="holiday-text">Semana Santa</span></td>
+      <td><span class="holiday-text">Não haverá aula</span></td>
+    </tr>
+    <tr class="week-end holiday">
+      <td class="center-col"></td>
+      <td class="center-col holiday-text">02/abr</td>
+      <td><span class="holiday-text">Semana Santa</span></td>
+      <td><span class="holiday-text">Não haverá aula</span></td>
+    </tr>
+    <!-- Semana 7 (Exceções e Expressões Regulares) -->
+    <tr>
+      <td class="center-col">7</td>
+      <td class="center-col">07/abr</td>
+      <td>Exceções (Leitura de Erros)</td>
+      <td>SyntaxError, ValueError, try, except, NameError, else, pass</td>
+    </tr>
+    <tr class="week-end">
+      <td class="center-col"></td>
+      <td class="center-col">09/abr</td>
+      <td>Expressões Regulares</td>
+      <td>re, re.search, re.match, re.findall, re.split</td>
+    </tr>
+    <!-- Semana 8 (Revisão e Prova Intermediária) -->
+    <tr>
+      <td class="center-col">8</td>
+      <td class="center-col">14/abr</td>
+      <td>Revisão</td>
+      <td>Revisão</td>
+    </tr>
+    <tr class="week-end exam">
+      <td class="center-col"></td>
+      <td class="center-col exam-text">16/abr</td>
+      <td><span class="exam-text">Prova Intermediária</span></td>
+      <td><span class="exam-text">Prova Intermediária</span></td>
+    </tr>
+    <!-- Semana 9 (Programação Orientada a Objetos) -->
+    <tr class="holiday">
+      <td class="center-col">9</td>
+      <td class="center-col holiday-text">21/abr</td>
+      <td><span class="holiday-text">Feriado: Tiradentes</span></td>
+      <td><span class="holiday-text">Não haverá aula</span></td>
+    </tr>
+    <tr class="week-end">
+      <td class="center-col"></td>
+      <td class="center-col">23/abr</td>
+      <td>Programação Orientada a Objetos</td>
+      <td>Classes; Atributos</td>
+    </tr>
+    <!-- Semana 10 (Cálculos Numéricos e Álgebra Linear)-->
+    <tr>
+      <td class="center-col">10</td>
+      <td class="center-col">28/abr</td>
+      <td>Cálculos Numéricos e Álgebra Linear</td>
+      <td>Numpy; Arrays</td>
+    </tr>
+    <tr class="week-end">
+      <td class="center-col"></td>
+      <td class="center-col">30/abr</td>
+      <td>Cálculos Numéricos e Álgebra Linear</td>
+      <td>Vetores; Matrizes; Operações básicas</td>
+    </tr>
+    <!-- Semana 11 (Cálculos Numéricos e Álgebra Linear) -->
+    <tr>
+      <td class="center-col">11</td>
+      <td class="center-col">05/mai</td>
+      <td>Cálculos Numéricos e Álgebra Linear</td>
+      <td>Operações avançadas; Ferramentas de álgebra linear</td>
+    </tr>
+    <tr class="week-end">
+      <td class="center-col"></td>
+      <td class="center-col">07/mai</td>
+      <td>Aplicações I: Dados</td>
+      <td>Pandas; Séries; Dataframes; Indexação</td>
+    </tr>
+    <!-- Semana 12 (Aplicações I: Dados) -->
+    <tr>
+      <td class="center-col">12</td>
+      <td class="center-col">12/mai</td>
+      <td>Aplicações I: Dados</td>
+      <td>Importação e exportação de dados; Operações com colunas; Merge</td>
+    </tr>
+    <tr class="week-end">
+      <td class="center-col"></td>
+      <td class="center-col">14/mai</td>
+      <td>Aplicações I: Dados</td>
+      <td>Agrupamento; Reshape; Eficiência; dtypes</td>
+    </tr>
+    <!-- Semana 13 (Aplicações II: Visualização de Dados) -->
+    <tr>
+      <td class="center-col">13</td>
+      <td class="center-col">19/mai</td>
+      <td>Aplicações II: Visualização de Dados</td>
+      <td>Gráficos com Matplotlib</td>
+    </tr>
+    <tr class="week-end">
+      <td class="center-col"></td>
+      <td class="center-col">21/mai</td>
+      <td>Aplicações II: Visualização de Dados</td>
+      <td>Gráficos com Seaborn e Plotly</td>
+    </tr>
+    <!-- Semana 14 (Projeto: Análise Empírica) -->
+    <tr>
+      <td class="center-col">14</td>
+      <td class="center-col">26/mai</td>
+      <td>Projeto: Análise Empírica</td>
+      <td>Replicabilidade e boas práticas; Limpeza de dados</td>
+    </tr>
+    <tr class="week-end">
+      <td class="center-col"></td>
+      <td class="center-col">28/mai</td>
+      <td>Projeto: Análise Empírica</td>
+      <td>Operações com dataframes; Correção de missings; Análises descritivas</td>
+    </tr>
+    <!-- Semana 15 (Introdução ao R) -->
+    <tr>
+      <td class="center-col">15</td>
+      <td class="center-col">02/jun</td>
+      <td>Introdução ao R</td>
+      <td>Sintaxe; Objetos; Semelhanças com Python</td>
+    </tr>
+    <tr class="week-end holiday">
+      <td class="center-col"></td>
+      <td class="center-col holiday-text">04/jun</td>
+      <td><span class="holiday-text">Feriado: Corpus Christi</span></td>
+      <td><span class="holiday-text">Não haverá aula</span></td>
+    </tr>
+    <!-- Semana 16 (Introdução ao R) -->
+    <tr>
+      <td class="center-col">16</td>
+      <td class="center-col">09/jun</td>
+      <td>Introdução ao R</td>
+      <td>Tidyverse</td>
+    </tr>
+    <tr class="week-end">
+      <td class="center-col"></td>
+      <td class="center-col">11/jun</td>
+      <td>Introdução ao R</td>
+      <td>Visualização de dados</td>
+    </tr>
+    <!-- Semana 17 (Apresentação de Trabalhos) -->
+    <tr class="exam">
+      <td class="center-col exam-text">17</td>
+      <td class="center-col exam-text">16/jun</td>
+      <td><span class="exam-text">Apresentação de Trabalhos</span></td>
+      <td><span class="exam-text">Apresentações em grupo</span></td>
+    </tr>
+    <tr class="week-end exam">
+      <td class="center-col"></td>
+      <td class="center-col exam-text">18/jun</td>
+      <td><span class="exam-text">Apresentação de Trabalhos</span></td>
+      <td><span class="exam-text">Apresentações em grupo</span></td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - "/*.pdf"
+
+website:
+  title: "Arthur Viaro"
+  navbar:
+    right:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - teaching.qmd
+      - href: cv.pdf
+        text: CV
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
