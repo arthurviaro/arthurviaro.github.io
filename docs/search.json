@@ -7,55 +7,6 @@
     "text": "About this site"
   },
   {
-    "objectID": "teaching/eae1106/cronograma.html",
-    "href": "teaching/eae1106/cronograma.html",
-    "title": "Arthur Viaro",
-    "section": "",
-    "text": "EAE1106 - Métodos Computacionais para Economia\nFaculdade de Economia, Administração, Contabilidade e Atuária Universidade de São Paulo\n1º semestre de 2026"
-  },
-  {
-    "objectID": "teaching/eae1106/cronograma.html#plano-de-aulas",
-    "href": "teaching/eae1106/cronograma.html#plano-de-aulas",
-    "title": "Arthur Viaro",
-    "section": "Plano de Aulas",
-    "text": "Plano de Aulas\nCronograma sujeito a alterações\n\n\n\n\n\n\n\n\n\n\n\nSemana\n\n\nData\n\n\nTema\n\n\nConteúdo\n\n\n\n\n\n\n\n1\n\n\n24/fev\n\n\nFundamentos de computação\n\n\nComo os computadores pensam?\n\n\n\n\n\n\n26/fev\n\n\nFundamentos de computação\n\n\nDiretórios; Terminal; Linguagens de Programação\n\n\n\n\n\n2\n\n\n03/mar\n\n\nPrimeiros Passos no Python\n\n\nInstalação; IDEs; Bibliotecas\n\n\n\n\n\n\n05/mar\n\n\nTipos de Dados e Expressões\n\n\nTipos (int, float, str, bool); Indexação\n\n\n\n\n\n3\n\n\n10/mar\n\n\nTipos de Dados e Expressões\n\n\nListas; Tuplas\n\n\n\n\n\n\n12/mar\n\n\nTipos de Dados e Expressões\n\n\nDicionários\n\n\n\n\n\n4\n\n\n17/mar\n\n\nControle de Fluxo e Iteração\n\n\nCondicionais (if, elif, else, or, and, bool)\n\n\n\n\n\n\n19/mar\n\n\nControle de Fluxo e Iteração\n\n\nLoops (while, for, list, range, continue, break)\n\n\n\n\n\n5\n\n\n24/mar\n\n\nFunções\n\n\nFunções built-in e personalizadas; Argumentos\n\n\n\n\n\n\n26/mar\n\n\nFunções\n\n\nRetorno; Documentação; Funções anônimas\n\n\n\n\n\n6\n\n\n31/mar\n\n\nSemana Santa\n\n\nNão haverá aula\n\n\n\n\n\n\n02/abr\n\n\nSemana Santa\n\n\nNão haverá aula\n\n\n\n\n\n7\n\n\n07/abr\n\n\nExceções (Leitura de Erros)\n\n\nSyntaxError, ValueError, try, except, NameError, else, pass\n\n\n\n\n\n\n09/abr\n\n\nExpressões Regulares\n\n\nre, re.search, re.match, re.findall, re.split\n\n\n\n\n\n8\n\n\n14/abr\n\n\nRevisão\n\n\nRevisão\n\n\n\n\n\n\n16/abr\n\n\nProva Intermediária\n\n\nProva Intermediária\n\n\n\n\n\n9\n\n\n21/abr\n\n\nFeriado: Tiradentes\n\n\nNão haverá aula\n\n\n\n\n\n\n23/abr\n\n\nProgramação Orientada a Objetos\n\n\nClasses; Atributos\n\n\n\n\n\n10\n\n\n28/abr\n\n\nCálculos Numéricos e Álgebra Linear\n\n\nNumpy; Arrays\n\n\n\n\n\n\n30/abr\n\n\nCálculos Numéricos e Álgebra Linear\n\n\nVetores; Matrizes; Operações básicas\n\n\n\n\n\n11\n\n\n05/mai\n\n\nCálculos Numéricos e Álgebra Linear\n\n\nOperações avançadas; Ferramentas de álgebra linear\n\n\n\n\n\n\n07/mai\n\n\nAplicações I: Dados\n\n\nPandas; Séries; Dataframes; Indexação\n\n\n\n\n\n12\n\n\n12/mai\n\n\nAplicações I: Dados\n\n\nImportação e exportação de dados; Operações com colunas; Merge\n\n\n\n\n\n\n14/mai\n\n\nAplicações I: Dados\n\n\nAgrupamento; Reshape; Eficiência; dtypes\n\n\n\n\n\n13\n\n\n19/mai\n\n\nAplicações II: Visualização de Dados\n\n\nGráficos com Matplotlib\n\n\n\n\n\n\n21/mai\n\n\nAplicações II: Visualização de Dados\n\n\nGráficos com Seaborn e Plotly\n\n\n\n\n\n14\n\n\n26/mai\n\n\nProjeto: Análise Empírica\n\n\nReplicabilidade e boas práticas; Limpeza de dados\n\n\n\n\n\n\n28/mai\n\n\nProjeto: Análise Empírica\n\n\nOperações com dataframes; Correção de missings; Análises descritivas\n\n\n\n\n\n15\n\n\n02/jun\n\n\nIntrodução ao R\n\n\nSintaxe; Objetos; Semelhanças com Python\n\n\n\n\n\n\n04/jun\n\n\nFeriado: Corpus Christi\n\n\nNão haverá aula\n\n\n\n\n\n16\n\n\n09/jun\n\n\nIntrodução ao R\n\n\nTidyverse\n\n\n\n\n\n\n11/jun\n\n\nIntrodução ao R\n\n\nVisualização de dados\n\n\n\n\n\n17\n\n\n16/jun\n\n\nApresentação de Trabalhos\n\n\nApresentações em grupo\n\n\n\n\n\n\n18/jun\n\n\nApresentação de Trabalhos\n\n\nApresentações em grupo"
-  },
-  {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Arthur Viaro",
-    "section": "",
-    "text": "Trade Shocks and Human Capital: Evidence from Brazil’s Trade Liberalization  (with Marcos Nakaguma)    Revise & Resubmit Journal of International Economics  \nHow Immigration Shapes Politics: Populism, Labor Movements, and Political Preferences in Brazil  (with Marcos Nakaguma and Thales Pereira) \nFiscal Capacity and the Provision of Public Goods in Brazil, 1891-1930"
-  },
-  {
-    "objectID": "research.html#working-papers",
-    "href": "research.html#working-papers",
-    "title": "Arthur Viaro",
-    "section": "",
-    "text": "Trade Shocks and Human Capital: Evidence from Brazil’s Trade Liberalization  (with Marcos Nakaguma)    Revise & Resubmit Journal of International Economics  \nHow Immigration Shapes Politics: Populism, Labor Movements, and Political Preferences in Brazil  (with Marcos Nakaguma and Thales Pereira) \nFiscal Capacity and the Provision of Public Goods in Brazil, 1891-1930"
-  },
-  {
-    "objectID": "research.html#work-in-progress",
-    "href": "research.html#work-in-progress",
-    "title": "Arthur Viaro",
-    "section": "Work in Progress",
-    "text": "Work in Progress\n\nSugarcane Expansion and Development: Evidence from São Paulo  (with Yuri Luz and Marcos Nakaguma) \nRailroad Expansion and Mortality in Early Twentieth-Century Brazil  (with Darcio Genicolo) \nBroadcasting Populism: Radio and Mass Politics in Brazil\nPolitical Power and State Capacity in Early Twentieth-Century Brazil"
-  },
-  {
-    "objectID": "teaching.html",
-    "href": "teaching.html",
-    "title": "Teaching",
-    "section": "",
-    "text": "FEA-USP\n\nEAE1106 - Computational Methods for Economics (Undergraduate), 2026 - Syllabus in portuguese\n\nInsper\n\nMicroeconomics II (Undergraduate), 2025\nInternational Economics (Undergraduate), 2022-2025\nPrinciples of Macroeconomics (Undergraduate), 2024 \n\nSão Paulo School of Economics (EESP-FGV)\n\nPublic Economics (Undergraduate), 2023\nStatistics I (Undergraduate), 2023\nProjects II (Undergraduate), 2022\nMicroeconomics II (Undergraduate), 2022\nIntroduction to Economics (Undergraduate), 2022-2023"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Arthur Viaro",
-    "section": "",
-    "text": "I am an Assistant Professor of Economics at the University of São Paulo (FEA-USP).\nMy research lies at the intersection of Development Economics and Economic History, with a particular focus on institutional and political change in Brazil during the early twentieth century and its implications for long-term development.\nResearch Interests Development Economics, Economic History, Political Economy\nContact Information arthur.viaro@gmail.com Department of Economics – University of São Paulo FEA 2 Building, Office 230 Av. Professor Luciano Gualberto, 908 São Paulo, SP - 05508-010, Brazil"
-  },
-  {
     "objectID": "teaching/eae1106/index.html",
     "href": "teaching/eae1106/index.html",
     "title": "Arthur Viaro",
@@ -109,6 +60,111 @@
     "href": "teaching/eae1106/index.html#slides",
     "title": "Arthur Viaro",
     "section": "Slides",
-    "text": "Slides\n\nAula 01 - Fundamentos de Computação\nAula 02 - Fundamentos de Computação\nAula 03 - Primeiros Passos em Python\n\n\nListas de Exercícios\nAs listas de exercícios não precisam ser entregues. No entanto, recomenda-se fortemente que sejam resolvidas."
+    "text": "Slides\n\nAula 01 - Fundamentos de Computação\nAula 02 - Fundamentos de Computação\nAula 03 - Primeiros Passos em Python\nAula 04 - Tipos de Dados e Expressões\n\n\nListas de Exercícios\nAs listas de exercícios não precisam ser entregues. No entanto, recomenda-se fortemente que sejam resolvidas."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Arthur Viaro",
+    "section": "",
+    "text": "I am an Assistant Professor of Economics at the University of São Paulo (FEA-USP).\nMy research lies at the intersection of Development Economics and Economic History, with a particular focus on institutional and political change in Brazil during the early twentieth century and its implications for long-term development.\nResearch Interests Development Economics, Economic History, Political Economy\nContact Information arthur.viaro@gmail.com Department of Economics – University of São Paulo FEA 2 Building, Office 230 Av. Professor Luciano Gualberto, 908 São Paulo, SP - 05508-010, Brazil"
+  },
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "FEA-USP\n\nEAE1106 - Computational Methods for Economics (Undergraduate), 2026 - Syllabus in portuguese\n\nInsper\n\nMicroeconomics II (Undergraduate), 2025\nInternational Economics (Undergraduate), 2022-2025\nPrinciples of Macroeconomics (Undergraduate), 2024 \n\nSão Paulo School of Economics (EESP-FGV)\n\nPublic Economics (Undergraduate), 2023\nStatistics I (Undergraduate), 2023\nProjects II (Undergraduate), 2022\nMicroeconomics II (Undergraduate), 2022\nIntroduction to Economics (Undergraduate), 2022-2023"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Arthur Viaro",
+    "section": "",
+    "text": "Trade Shocks and Human Capital: Evidence from Brazil’s Trade Liberalization  (with Marcos Nakaguma)    Revise & Resubmit Journal of International Economics  \nHow Immigration Shapes Politics: Populism, Labor Movements, and Political Preferences in Brazil  (with Marcos Nakaguma and Thales Pereira) \nFiscal Capacity and the Provision of Public Goods in Brazil, 1891-1930"
+  },
+  {
+    "objectID": "research.html#working-papers",
+    "href": "research.html#working-papers",
+    "title": "Arthur Viaro",
+    "section": "",
+    "text": "Trade Shocks and Human Capital: Evidence from Brazil’s Trade Liberalization  (with Marcos Nakaguma)    Revise & Resubmit Journal of International Economics  \nHow Immigration Shapes Politics: Populism, Labor Movements, and Political Preferences in Brazil  (with Marcos Nakaguma and Thales Pereira) \nFiscal Capacity and the Provision of Public Goods in Brazil, 1891-1930"
+  },
+  {
+    "objectID": "research.html#work-in-progress",
+    "href": "research.html#work-in-progress",
+    "title": "Arthur Viaro",
+    "section": "Work in Progress",
+    "text": "Work in Progress\n\nSugarcane Expansion and Development: Evidence from São Paulo  (with Yuri Luz and Marcos Nakaguma) \nRailroad Expansion and Mortality in Early Twentieth-Century Brazil  (with Darcio Genicolo) \nBroadcasting Populism: Radio and Mass Politics in Brazil\nPolitical Power and State Capacity in Early Twentieth-Century Brazil"
+  },
+  {
+    "objectID": "teaching/eae1106/cronograma.html",
+    "href": "teaching/eae1106/cronograma.html",
+    "title": "Arthur Viaro",
+    "section": "",
+    "text": "EAE1106 - Métodos Computacionais para Economia\nFaculdade de Economia, Administração, Contabilidade e Atuária Universidade de São Paulo\n1º semestre de 2026"
+  },
+  {
+    "objectID": "teaching/eae1106/cronograma.html#plano-de-aulas",
+    "href": "teaching/eae1106/cronograma.html#plano-de-aulas",
+    "title": "Arthur Viaro",
+    "section": "Plano de Aulas",
+    "text": "Plano de Aulas\nCronograma sujeito a alterações\n\n\n\n\n\n\n\n\n\n\n\nSemana\n\n\nData\n\n\nTema\n\n\nConteúdo\n\n\n\n\n\n\n\n1\n\n\n24/fev\n\n\nFundamentos de computação\n\n\nComo os computadores pensam?\n\n\n\n\n\n\n26/fev\n\n\nFundamentos de computação\n\n\nDiretórios; Terminal; Linguagens de Programação\n\n\n\n\n\n2\n\n\n03/mar\n\n\nPrimeiros Passos no Python\n\n\nInstalação; IDEs; Bibliotecas\n\n\n\n\n\n\n05/mar\n\n\nTipos de Dados e Expressões\n\n\nTipos (int, float, str, bool); Indexação\n\n\n\n\n\n3\n\n\n10/mar\n\n\nTipos de Dados e Expressões\n\n\nListas; Tuplas\n\n\n\n\n\n\n12/mar\n\n\nTipos de Dados e Expressões\n\n\nDicionários\n\n\n\n\n\n4\n\n\n17/mar\n\n\nControle de Fluxo e Iteração\n\n\nCondicionais (if, elif, else, or, and, bool)\n\n\n\n\n\n\n19/mar\n\n\nControle de Fluxo e Iteração\n\n\nLoops (while, for, list, range, continue, break)\n\n\n\n\n\n5\n\n\n24/mar\n\n\nFunções\n\n\nFunções built-in e personalizadas; Argumentos\n\n\n\n\n\n\n26/mar\n\n\nFunções\n\n\nRetorno; Documentação; Funções anônimas\n\n\n\n\n\n6\n\n\n31/mar\n\n\nSemana Santa\n\n\nNão haverá aula\n\n\n\n\n\n\n02/abr\n\n\nSemana Santa\n\n\nNão haverá aula\n\n\n\n\n\n7\n\n\n07/abr\n\n\nExceções (Leitura de Erros)\n\n\nSyntaxError, ValueError, try, except, NameError, else, pass\n\n\n\n\n\n\n09/abr\n\n\nExpressões Regulares\n\n\nre, re.search, re.match, re.findall, re.split\n\n\n\n\n\n8\n\n\n14/abr\n\n\nRevisão\n\n\nRevisão\n\n\n\n\n\n\n16/abr\n\n\nProva Intermediária\n\n\nProva Intermediária\n\n\n\n\n\n9\n\n\n21/abr\n\n\nFeriado: Tiradentes\n\n\nNão haverá aula\n\n\n\n\n\n\n23/abr\n\n\nProgramação Orientada a Objetos\n\n\nClasses; Atributos\n\n\n\n\n\n10\n\n\n28/abr\n\n\nCálculos Numéricos e Álgebra Linear\n\n\nNumpy; Arrays\n\n\n\n\n\n\n30/abr\n\n\nCálculos Numéricos e Álgebra Linear\n\n\nVetores; Matrizes; Operações básicas\n\n\n\n\n\n11\n\n\n05/mai\n\n\nCálculos Numéricos e Álgebra Linear\n\n\nOperações avançadas; Ferramentas de álgebra linear\n\n\n\n\n\n\n07/mai\n\n\nAplicações I: Dados\n\n\nPandas; Séries; Dataframes; Indexação\n\n\n\n\n\n12\n\n\n12/mai\n\n\nAplicações I: Dados\n\n\nImportação e exportação de dados; Operações com colunas; Merge\n\n\n\n\n\n\n14/mai\n\n\nAplicações I: Dados\n\n\nAgrupamento; Reshape; Eficiência; dtypes\n\n\n\n\n\n13\n\n\n19/mai\n\n\nAplicações II: Visualização de Dados\n\n\nGráficos com Matplotlib\n\n\n\n\n\n\n21/mai\n\n\nAplicações II: Visualização de Dados\n\n\nGráficos com Seaborn e Plotly\n\n\n\n\n\n14\n\n\n26/mai\n\n\nProjeto: Análise Empírica\n\n\nReplicabilidade e boas práticas; Limpeza de dados\n\n\n\n\n\n\n28/mai\n\n\nProjeto: Análise Empírica\n\n\nOperações com dataframes; Correção de missings; Análises descritivas\n\n\n\n\n\n15\n\n\n02/jun\n\n\nIntrodução ao R\n\n\nSintaxe; Objetos; Semelhanças com Python\n\n\n\n\n\n\n04/jun\n\n\nFeriado: Corpus Christi\n\n\nNão haverá aula\n\n\n\n\n\n16\n\n\n09/jun\n\n\nIntrodução ao R\n\n\nTidyverse\n\n\n\n\n\n\n11/jun\n\n\nIntrodução ao R\n\n\nVisualização de dados\n\n\n\n\n\n17\n\n\n16/jun\n\n\nApresentação de Trabalhos\n\n\nApresentações em grupo\n\n\n\n\n\n\n18/jun\n\n\nApresentação de Trabalhos\n\n\nApresentações em grupo"
+  },
+  {
+    "objectID": "files/teaching/04-tipos-dados.html",
+    "href": "files/teaching/04-tipos-dados.html",
+    "title": "Aula 04 - Tipos de Dados e Expressões",
+    "section": "",
+    "text": "EAE1106 - Métodos Computacionais para Economia\nFaculdade de Economia, Administração, Contabilidade e Atuária Universidade de São Paulo\n1º semestre de 2026 Prof. Arthur Viaro"
+  },
+  {
+    "objectID": "files/teaching/04-tipos-dados.html#introdução-às-funções",
+    "href": "files/teaching/04-tipos-dados.html#introdução-às-funções",
+    "title": "Aula 04 - Tipos de Dados e Expressões",
+    "section": "Introdução às Funções ",
+    "text": "Introdução às Funções \n\nEm praticamente toda linguagem de programação, temos acesso a funções.\nUma função pode ser entendida como uma ação (um “verbo”) que executa alguma tarefa no programa e retorna algum resultado.\nToda linguagem já possui um conjunto de funções pré-definidas — ações básicas que o computador já sabe realizar. O programador pode utilizá-las para instruir o computador a executar determinadas operações.\nNo nosso primeiro programa, utilizamos a função print. Essa função exibe algo na tela. Ela não imprime um texto fixo: ela imprime aquilo que você passar como argumento.\n\n\nArgumentos \n\nUm argumento é uma informação passada para uma função que influencia seu comportamento.\nPor exemplo:\nAqui, \"Olá, Mundo!\" é o argumento da função print.\nOs criadores do Python não sabiam o que você desejaria exibir na tela. Por isso, projetaram a função print para receber um texto (string) como entrada, permitindo que você escolha o que será exibido.\nNosso programa pode ser melhorado. Em vez de mostrar apenas \"Olá, Mundo!\", podemos torná-lo interativo. Por exemplo, queremos que ele pergunte o nome do usuário e exiba na tela.\nPara isso, utilizamos a função input:\nA função input exibe uma mensagem (prompt) e espera que o usuário digite algo.\nNo entanto, esse código ainda não usa o nome digitado pelo usuário. Para isso, precisamos introduzir variáveis."
+  },
+  {
+    "objectID": "files/teaching/04-tipos-dados.html#variáveis",
+    "href": "files/teaching/04-tipos-dados.html#variáveis",
+    "title": "Aula 04 - Tipos de Dados e Expressões",
+    "section": "Variáveis ",
+    "text": "Variáveis \n\nUma variável é um espaço na memória que armazena um valor.\nPodemos modificar o programa da seguinte forma:\nO símbolo = em Python não significa igualdade matemática, mas sim atribuição.\nOu seja, name = input(\"Qual o valor de  your name? \") significa: “Pegue o valor retornado por input e armazene na variável nome.”\nNote que se fizermos:\nO programa exibirá literalmente: Olá, nome! independentemente do texto que o usuário digitou.\nIsso ocorre porque “nome” está entre aspas, sendo tratado como texto.\nA forma correta de escrever o código é:\nAlgumas funções possuem mais de um argumento que influencia seu comportamento.\nPodemos usar a vírgulas , para passar múltiplos argumentos e editar o nosso código da seguinte maneira:"
+  },
+  {
+    "objectID": "files/teaching/04-tipos-dados.html#strings-e-parâmetros",
+    "href": "files/teaching/04-tipos-dados.html#strings-e-parâmetros",
+    "title": "Aula 04 - Tipos de Dados e Expressões",
+    "section": "Strings e Parâmetros ",
+    "text": "Strings e Parâmetros \n\nUma string (str) é uma sequência de caracteres (texto).\nO programa a seguir imprime o texto em duas linhas diferentes:\nIsso acontece porque a função print possui o argumento end='\\n'.\nO \\n indica que a função print automaticamente cria uma quebra de linha ao ser executada.\nNote que podemos fornecer um argumento diferente de modo que a função não crie uma nova linha ao ser executada!\nPodemos modificar o programa da seguinte maneira:\nAo fornecer end=\"\", estamos sobrescrevendo o valor padrão de end, de modo que ele nunca cria uma nova linha após esta primeira instrução print. Fornecendo o nome como “Fulano”, a saída na janela do terminal será Olá, Fulano!.\nParâmetros, portanto, são argumentos que podem ser aceitos por uma função.\nVocê pode aprender mais na documentação do Python sobre o print.\n\n\nUm Pequeno Problema com Aspas \n\nObserve como adicionar aspas como parte da sua string é um desafio. print(\"Olá, \"amigo\"\") não funcionará e o interpretador retornará um erro.\nGeralmente, existem duas abordagens para corrigir isso. Primeiro, você poderia simplesmente mudar as aspas para aspas simples.\nOutra abordagem, mais comumente utilizada, seria escrever print(\"Olá, \\\"amigo\\\"\").\nAs barras invertidas dizem ao interpretador que o caractere seguinte deve ser tratado como uma aspa dentro da string, evitando um erro do interpretador.\nProvavelmente, a maneira mais elegante de usar strings seria a seguinte:\nObserve o f em print(f\"Olá, {nome}\"). Esse f é um indicador especial para o Python tratar essa string de uma maneira específica, diferente das abordagens anteriores que ilustramos nesta aula.\n\n\n\nFatiamento de Strings (Slicing) \n\nO fatiamento de string (slicing) permite que você “corte” uma string para obter uma subseção dela.\nA sintaxe básica utiliza colchetes e índices: string[início:fim].\n\nÍndice de Início: Onde o fatiamento começa (incluído).\nÍndice de Fim: Onde o fatiamento termina (excluído).\n\nAssim como outras operações de sequência no Python, o fatiamento (slicing) utiliza indexação baseada em zero, onde o primeiro elemento está no índice 0.\nPense no índice não como o número do caractere, mas como a distância (ou deslocamento) do início da string.\n\nNo índice 0, você percorreu 0 caracteres (está no início).\nNo índice 1, você saltou 1 caractere para chegar ao próximo.\n\nDica: Se uma string tem comprimento n, o último índice será sempre n−1.\nImagine a string nome = \"Python\". Os índices são:\n\n\n\n\nLetra\nP\ny\nt\nh\no\nn\n\n\n\n\nÍndice\n0\n1\n2\n3\n4\n5\n\n\nNegativo\n-6\n-5\n-4\n-3\n-2\n-1\n\n\n\n\nVocê também pode adicionar um terceiro parâmetro: string[início:fim:passo].\nO passo determina quantos caracteres o Python deve pular.\nO Python permite contar de trás para frente usando números negativos.\nO -1 é sempre o último caractere.\nO slicing é muito usado para limpar dados formatados.\nPor exemplo, se você recebe uma data no formato 05-03-2026 e quer extrair apenas o ano:\n\n\n\nMétodos de Strings \n\nVocê nunca deve esperar que seu usuário coopere conforme o pretendido. Portanto, você precisará garantir que a entrada (input) do seu usuário seja corrigida ou verificada.\nAcontece que as strings já possuem, de forma nativa, a capacidade de remover espaços em branco.\nAo utilizar o método strip na variável nome (por exemplo, nome = nome.strip()), você removerá qualquer espaço em branco à esquerda e à direita da entrada do usuário.\nUm método é em essência uma sequência de instruções encapsuladas dentro de um único comando que recebe argumentos e devolve um valor.\nVocê pode modificar seu código para:\nAo executar este programa novamente, independentemente de quantos espaços você digitar antes ou depois do nome, ele removerá (strip) todo o espaço em branco.\nUsando o método title, o nome do usuário ficaria com as iniciais em maiúsculo (formato de título):\nObserve que você pode modificar seu código para ser mais eficiente:\nNós poderíamos ir ainda mais longe!\nAlém do strip() e title(), você usará frequentemente outros métodos para normalizar dados.\nPor exemplo, converter todos os caracteres para maiúsculas ou minúsculas (upper() e lower()).\nÚteis para comparar textos sem se preocupar se o usuário digitou em maiúsculas ou minúsculas.\nupper(): Transforma toda a string em MAIÚSCULAS.\nlower(): Transforma toda a string em minúsculas.\nDividir uma string em partes menores (split()).\nEsse método “quebra” a string sempre que encontra o delimitador especificado e retorna uma lista contendo os trechos resultantes.\nNo exemplo a seguir, o espaço \" \" é utilizado como critério de separação.\nSubstituir todas as ocorrências de um trecho de texto por outro (replace()).\nVocê pode aprender mais sobre strings e seus métodos na documentação oficial do Python sobre o tipo str"
+  },
+  {
+    "objectID": "files/teaching/04-tipos-dados.html#inteiros-int",
+    "href": "files/teaching/04-tipos-dados.html#inteiros-int",
+    "title": "Aula 04 - Tipos de Dados e Expressões",
+    "section": "Inteiros (int) ",
+    "text": "Inteiros (int) \n\nNo Python, um número inteiro é conhecido como um int.\nNo mundo da matemática, estamos familiarizados com os operadores +, -, *, / e %.\nEsse último operador, % ou módulo, pode não ser muito familiar para você.\nPrimeiro, podemos declarar algumas variáveis:\nNaturalmente, quando executamos o programa, obtemos o resultado 3 na janela do terminal.\nPodemos tornar isso mais interativo usando a função input.\nAo executar este programa, descobrimos que a saída está incorreta. Por que isso acontece?\nAnteriormente, vimos como o sinal de + concatena (junta) duas strings. Como a entrada do seu teclado chega ao interpretador como texto, ela é tratada como uma string.\nPortanto, precisamos converter essa entrada de uma string para um inteiro. Podemos fazer isso da seguinte forma:\nO resultado agora está correto. O uso de int(x) é chamado de “casting” (conversão de tipo), onde um valor é temporariamente alterado de um tipo de variável (neste caso, uma string) para outro (aqui, um inteiro).\nPodemos melhorar ainda mais nosso programa da seguinte forma:\nIsso ilustra que você pode executar funções dentro de funções. A função interna (inner function) é executada primeiro e, depois, a externa (outer function).\nPrimeiro, a função input é executada. Em seguida, a função int.\nVocê pode aprender mais na documentação do Python sobre o int."
+  },
+  {
+    "objectID": "files/teaching/04-tipos-dados.html#floats-pontos-flutuantes",
+    "href": "files/teaching/04-tipos-dados.html#floats-pontos-flutuantes",
+    "title": "Aula 04 - Tipos de Dados e Expressões",
+    "section": "Floats (Pontos Flutuantes) ",
+    "text": "Floats (Pontos Flutuantes) \n\nUm valor de ponto flutuante é um número real que possui um ponto decimal, como 0.52.\nVocê pode alterar seu código para suportar floats da seguinte forma:\nEssa mudança permite que seu usuário digite 1.2 e 3.4 para apresentar um total de 4.6.\nImaginemos, entretanto, que você queira arredondar o total para o número inteiro mais próximo. Olhando a documentação do Python para round, você verá que os argumentos disponíveis são round(number[, ndigits]).\nEsses colchetes indicam que algo opcional pode ser especificado pelo programador.\nPortanto, você poderia fazer round(n) para arredondar um dígito para o inteiro mais próximo.\nAlternativamente, você poderia codificar da seguinte forma:\nA saída será arredondada para o número inteiro mais próximo.\nE se quiséssemos formatar a saída de números longos? Por exemplo, em vez de ver 1000, você pode desejar ver 1,000.\nVocê poderia modificar seu código assim:\nEmbora pareça enigmático, esse print(f\"{z:,}\") cria um cenário onde o z exibido incluirá vírgulas (separador de milhar), resultando em algo como 1,000 ou 2,500.\n\n\nMais sobre floats \n\nComo podemos arredondar valores de ponto flutuante?\nPrimeiro, modifique seu código:\nAo inserir 2 como x e 3 como y, o resultado z é 0.6666666666, parecendo ir ao infinito como poderíamos esperar.\nImaginemos que queremos arredondar isso. Poderíamos modificar nosso código:\nComo esperado, isso arredondará o resultado para as duas casas decimais mais próximas.\nTambém poderíamos usar uma f-string para formatar a saída da seguinte forma:\nVocê pode aprender mais na documentação do Python sobre float."
+  },
+  {
+    "objectID": "files/teaching/04-tipos-dados.html#booleanos",
+    "href": "files/teaching/04-tipos-dados.html#booleanos",
+    "title": "Aula 04 - Tipos de Dados e Expressões",
+    "section": "Booleanos ",
+    "text": "Booleanos \n\nEm Python, um booleano representa um de dois valores: True (Verdadeiro) ou False (Falso).\nDiferente de strings, eles não levam aspas e devem sempre começar com letra maiúscula.\nTrue pode ser convertido automaticamente para 1; False para 0.\nIsso pode ser muito conveniente, por exemplo, ao contar valores verdadeiros ou falsos nas colunas de uma tabela de dados."
+  },
+  {
+    "objectID": "files/teaching/04-tipos-dados.html#explorando-o-python",
+    "href": "files/teaching/04-tipos-dados.html#explorando-o-python",
+    "title": "Aula 04 - Tipos de Dados e Expressões",
+    "section": "Explorando o Python ",
+    "text": "Explorando o Python \n\nAlém de consultar a documentação online, você pode usar funções nativas para descobrir o que cada tipo de dado é capaz de fazer.\n\n\nFunção dir() \n\nA função dir funciona como um “mapa”. Ela lista todos os métodos e atributos disponíveis para um objeto ou tipo de dado.\nSe você quiser saber tudo o que pode fazer com uma string, basta digitar: dir(str).\nIsso retornará uma lista gigante contendo nomes como strip, title, lower, upper, entre outros. É a forma mais rápida de verificar: “Será que existe um método para isso?”.\n\n\n\nFunção help() \n\nEnquanto o dir diz o que existe, o help explica o que cada coisa faz.\nSe você esqueceu como usar o strip, por exemplo, pode chamar a ajuda interativa: help(str.strip).\nO interpretador exibirá uma breve explicação técnica sobre como o método funciona, quais argumentos ele aceita e o que ele retorna."
   }
 ]

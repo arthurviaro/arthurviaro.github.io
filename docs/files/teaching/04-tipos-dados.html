@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>tipos-dados – Arthur Viaro</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Arthur Viaro</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../teaching.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../cv.pdf"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#aula-04---tipos-de-dados-e-expressões" id="toc-aula-04---tipos-de-dados-e-expressões" class="nav-link active" data-scroll-target="#aula-04---tipos-de-dados-e-expressões">Aula 04 - Tipos de Dados e Expressões</a>
+  <ul class="collapse">
+  <li><a href="#introdução-às-funções" id="toc-introdução-às-funções" class="nav-link" data-scroll-target="#introdução-às-funções">Introdução às Funções </a><a id="funcoes" class="nav-link" data-scroll-target="undefined"></a>
+  <ul class="collapse">
+  <li><a href="#argumentos" id="toc-argumentos" class="nav-link" data-scroll-target="#argumentos">Argumentos </a><a id="argumentos" class="nav-link" data-scroll-target="undefined"></a></li>
+  </ul></li>
+  <li><a href="#variáveis" id="toc-variáveis" class="nav-link" data-scroll-target="#variáveis">Variáveis </a><a id="variaveis" class="nav-link" data-scroll-target="undefined"></a></li>
+  <li><a href="#strings-e-parâmetros" id="toc-strings-e-parâmetros" class="nav-link" data-scroll-target="#strings-e-parâmetros">Strings e Parâmetros </a><a id="strings" class="nav-link" data-scroll-target="undefined"></a>
+  <ul class="collapse">
+  <li><a href="#um-pequeno-problema-com-aspas" id="toc-um-pequeno-problema-com-aspas" class="nav-link" data-scroll-target="#um-pequeno-problema-com-aspas">Um Pequeno Problema com Aspas </a><a id="um-pequeno-problema-com-aspas" class="nav-link" data-scroll-target="undefined"></a></li>
+  <li><a href="#fatiamento-de-strings-slicing" id="toc-fatiamento-de-strings-slicing" class="nav-link" data-scroll-target="#fatiamento-de-strings-slicing">Fatiamento de Strings (Slicing) </a><a id="slicing" class="nav-link" data-scroll-target="undefined"></a></li>
+  <li><a href="#métodos-de-strings" id="toc-métodos-de-strings" class="nav-link" data-scroll-target="#métodos-de-strings">Métodos de Strings </a><a id="str-metodos" class="nav-link" data-scroll-target="undefined"></a></li>
+  </ul></li>
+  <li><a href="#inteiros-int" id="toc-inteiros-int" class="nav-link" data-scroll-target="#inteiros-int">Inteiros (int) </a><a id="inteiros" class="nav-link" data-scroll-target="undefined"></a></li>
+  <li><a href="#floats-pontos-flutuantes" id="toc-floats-pontos-flutuantes" class="nav-link" data-scroll-target="#floats-pontos-flutuantes">Floats (Pontos Flutuantes) </a><a id="float" class="nav-link" data-scroll-target="undefined"></a>
+  <ul class="collapse">
+  <li><a href="#mais-sobre-floats" id="toc-mais-sobre-floats" class="nav-link" data-scroll-target="#mais-sobre-floats">Mais sobre floats </a><a id="mais-sobre-floats" class="nav-link" data-scroll-target="undefined"></a></li>
+  </ul></li>
+  <li><a href="#booleanos" id="toc-booleanos" class="nav-link" data-scroll-target="#booleanos">Booleanos </a><a id="booleanos" class="nav-link" data-scroll-target="undefined"></a></li>
+  <li><a href="#explorando-o-python" id="toc-explorando-o-python" class="nav-link" data-scroll-target="#explorando-o-python">Explorando o Python </a><a id="explorando-python" class="nav-link" data-scroll-target="undefined"></a>
+  <ul class="collapse">
+  <li><a href="#função-dir" id="toc-função-dir" class="nav-link" data-scroll-target="#função-dir">Função dir() </a><a id="funcao-dir" class="nav-link" data-scroll-target="undefined"></a></li>
+  <li><a href="#função-help" id="toc-função-help" class="nav-link" data-scroll-target="#função-help">Função help() </a><a id="funcao-help" class="nav-link" data-scroll-target="undefined"></a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<p style="text-align: center; margin-bottom: 0; font-size: 24px;">
+EAE1106 - Métodos Computacionais para Economia
+</p>
+<p style="text-align: center; margin-bottom: 0;">
+Faculdade de Economia, Administração, Contabilidade e Atuária<br> Universidade de São Paulo
+</p>
+<p style="text-align: center; margin-top: 5px;">
+1º semestre de 2026<br><br> Prof.&nbsp;Arthur Viaro
+</p>
+<hr>
+<section id="aula-04---tipos-de-dados-e-expressões" class="level1">
+<h1>Aula 04 - Tipos de Dados e Expressões</h1>
+<ul>
+<li><a href="#funcoes">Introdução às Funções</a>
+<ul>
+<li><a href="#argumentos">Argumentos</a></li>
+</ul></li>
+<li><a href="#variaveis">Variáveis</a></li>
+<li><a href="#strings">Strings e Parâmetros</a>
+<ul>
+<li><a href="#um-pequeno-problema-com-aspas">Um pequeno problema com aspas</a></li>
+<li><a href="#slicing">Fatiamento de Strings (Slicing)</a></li>
+<li><a href="#str-metodos">Métodos de strings</a></li>
+</ul></li>
+<li><a href="#inteiros">Inteiros ou int</a><br>
+</li>
+<li><a href="#float">Floats (Pontos Flutuantes)</a>
+<ul>
+<li><a href="#mais-sobre-floats">Mais sobre floats</a></li>
+</ul></li>
+<li><a href="#booleanos">Booleanos</a></li>
+<li><a href="#explorando-python">Explorando o Python</a>
+<ul>
+<li><a href="#funcao-dir">Função dir()</a></li>
+<li><a href="#funcao-help">Função help()</a></li>
+</ul></li>
+</ul>
+<section id="introdução-às-funções" class="level2">
+<h2 class="anchored" data-anchor-id="introdução-às-funções">Introdução às Funções <a id="funcoes"></a></h2>
+<ul>
+<li>Em praticamente toda linguagem de programação, temos acesso a funções.</li>
+<li>Uma função pode ser entendida como uma <strong>ação</strong> (um “verbo”) que executa alguma tarefa no programa e retorna algum resultado.</li>
+<li>Toda linguagem já possui um conjunto de funções pré-definidas — ações básicas que o computador já sabe realizar. O programador pode utilizá-las para instruir o computador a executar determinadas operações.</li>
+<li>No nosso primeiro programa, utilizamos a função <code>print</code>. Essa função exibe algo na tela. Ela não imprime um texto fixo: ela imprime <strong>aquilo que você passar como argumento</strong>.</li>
+</ul>
+<section id="argumentos" class="level3">
+<h3 class="anchored" data-anchor-id="argumentos">Argumentos <a id="argumentos"></a></h3>
+<ul>
+<li><p>Um argumento é uma informação passada para uma função que influencia seu comportamento.</p></li>
+<li><p>Por exemplo:</p></li>
+<li><p>Aqui, <code>"Olá, Mundo!"</code> é o argumento da função <code>print</code>.</p></li>
+<li><p>Os criadores do Python não sabiam o que você desejaria exibir na tela. Por isso, projetaram a função <code>print</code> para receber um texto (<code>string</code>) como entrada, permitindo que você escolha o que será exibido.</p></li>
+<li><p>Nosso programa pode ser melhorado. Em vez de mostrar apenas <code>"Olá, Mundo!"</code>, podemos torná-lo interativo. Por exemplo, queremos que ele pergunte o nome do usuário e exiba na tela.</p></li>
+<li><p>Para isso, utilizamos a função <code>input</code>:</p></li>
+<li><p>A função <code>input</code> exibe uma mensagem (prompt) e espera que o usuário digite algo.</p></li>
+<li><p>No entanto, esse código ainda não usa o nome digitado pelo usuário. Para isso, precisamos introduzir <strong>variáveis</strong>.</p></li>
+</ul>
+</section>
+</section>
+<section id="variáveis" class="level2">
+<h2 class="anchored" data-anchor-id="variáveis">Variáveis <a id="variaveis"></a></h2>
+<ul>
+<li><p>Uma variável é um espaço na memória que armazena um valor.</p></li>
+<li><p>Podemos modificar o programa da seguinte forma:</p></li>
+<li><p>O símbolo <code>=</code> em Python não significa igualdade matemática, mas sim <strong>atribuição</strong>.</p></li>
+<li><p>Ou seja, <code>name = input("Qual o valor de  your name? ")</code> significa: “Pegue o valor retornado por <code>input</code> e armazene na variável <code>nome</code>.”</p></li>
+<li><p>Note que se fizermos:</p></li>
+<li><p>O programa exibirá literalmente: <code>Olá, nome!</code> independentemente do texto que o usuário digitou.</p></li>
+<li><p>Isso ocorre porque “nome” está entre aspas, sendo tratado como texto.</p></li>
+<li><p>A forma correta de escrever o código é:</p></li>
+<li><p>Algumas funções possuem mais de um argumento que influencia seu comportamento.</p></li>
+<li><p>Podemos usar a vírgulas <code>,</code> para passar múltiplos argumentos e editar o nosso código da seguinte maneira:</p></li>
+</ul>
+</section>
+<section id="strings-e-parâmetros" class="level2">
+<h2 class="anchored" data-anchor-id="strings-e-parâmetros">Strings e Parâmetros <a id="strings"></a></h2>
+<ul>
+<li><p>Uma string (<code>str</code>) é uma sequência de caracteres (texto).</p></li>
+<li><p>O programa a seguir imprime o texto em duas linhas diferentes:</p></li>
+<li><p>Isso acontece porque a função <code>print</code> possui o argumento <code>end='\n'</code>.</p></li>
+<li><p>O <code>\n</code> indica que a função <code>print</code> automaticamente cria uma quebra de linha ao ser executada.</p></li>
+<li><p>Note que podemos fornecer um argumento diferente de modo que a função não crie uma nova linha ao ser executada!</p></li>
+<li><p>Podemos modificar o programa da seguinte maneira:</p></li>
+<li><p>Ao fornecer <code>end=""</code>, estamos sobrescrevendo o valor padrão de <code>end</code>, de modo que ele nunca cria uma nova linha após esta primeira instrução <code>print</code>. Fornecendo o nome como “Fulano”, a saída na janela do terminal será Olá, Fulano!.</p></li>
+<li><p>Parâmetros, portanto, são argumentos que podem ser aceitos por uma função.</p></li>
+<li><p>Você pode aprender mais na <a href="https://docs.python.org/3/library/functions.html#print">documentação</a> do Python sobre o <code>print</code>.</p></li>
+</ul>
+<section id="um-pequeno-problema-com-aspas" class="level3">
+<h3 class="anchored" data-anchor-id="um-pequeno-problema-com-aspas">Um Pequeno Problema com Aspas <a id="um-pequeno-problema-com-aspas"></a></h3>
+<ul>
+<li><p>Observe como adicionar aspas como parte da sua <code>string</code> é um desafio. <code>print("Olá, "amigo"")</code> não funcionará e o interpretador retornará um erro.</p></li>
+<li><p>Geralmente, existem duas abordagens para corrigir isso. Primeiro, você poderia simplesmente mudar as aspas para aspas simples.</p></li>
+<li><p>Outra abordagem, mais comumente utilizada, seria escrever <code>print("Olá, \"amigo\"")</code>.</p></li>
+<li><p>As barras invertidas dizem ao interpretador que o caractere seguinte deve ser tratado como uma aspa dentro da string, evitando um erro do interpretador.</p></li>
+<li><p>Provavelmente, a maneira mais elegante de usar strings seria a seguinte:</p></li>
+<li><p>Observe o <code>f</code> em <code>print(f"Olá, {nome}")</code>. Esse <code>f</code> é um indicador especial para o Python tratar essa string de uma maneira específica, diferente das abordagens anteriores que ilustramos nesta aula.</p></li>
+</ul>
+</section>
+<section id="fatiamento-de-strings-slicing" class="level3">
+<h3 class="anchored" data-anchor-id="fatiamento-de-strings-slicing">Fatiamento de Strings (Slicing) <a id="slicing"></a></h3>
+<ul>
+<li>O fatiamento de string (<em>slicing</em>) permite que você “corte” uma string para obter uma subseção dela.</li>
+<li>A sintaxe básica utiliza colchetes e índices: <code>string[início:fim]</code>.
+<ul>
+<li>Índice de Início: Onde o fatiamento começa (incluído).</li>
+<li>Índice de Fim: Onde o fatiamento termina (excluído).</li>
+</ul></li>
+<li>Assim como outras operações de sequência no Python, o fatiamento (<em>slicing</em>) utiliza indexação baseada em zero, onde o primeiro elemento está no índice 0.</li>
+<li>Pense no índice não como o número do caractere, mas como a distância (ou deslocamento) do início da string.
+<ul>
+<li>No índice 0, você percorreu 0 caracteres (está no início).</li>
+<li>No índice 1, você saltou 1 caractere para chegar ao próximo.</li>
+</ul></li>
+<li><strong>Dica</strong>: Se uma string tem comprimento n, o último índice será sempre n−1.</li>
+<li>Imagine a string <code>nome = "Python"</code>. Os índices são:</li>
+</ul>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Letra</th>
+<th>P</th>
+<th>y</th>
+<th>t</th>
+<th>h</th>
+<th>o</th>
+<th>n</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Índice</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>Negativo</td>
+<td>-6</td>
+<td>-5</td>
+<td>-4</td>
+<td>-3</td>
+<td>-2</td>
+<td>-1</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>Você também pode adicionar um terceiro parâmetro: <code>string[início:fim:passo]</code>.</p></li>
+<li><p>O passo determina quantos caracteres o Python deve pular.</p></li>
+<li><p>O Python permite contar de trás para frente usando números negativos.</p></li>
+<li><p>O -1 é sempre o último caractere.</p></li>
+<li><p>O slicing é muito usado para limpar dados formatados.</p></li>
+<li><p>Por exemplo, se você recebe uma data no formato <code>05-03-2026</code> e quer extrair apenas o ano:</p></li>
+</ul>
+</section>
+<section id="métodos-de-strings" class="level3">
+<h3 class="anchored" data-anchor-id="métodos-de-strings">Métodos de Strings <a id="str-metodos"></a></h3>
+<ul>
+<li><p>Você nunca deve esperar que seu usuário coopere conforme o pretendido. Portanto, você precisará garantir que a entrada (input) do seu usuário seja corrigida ou verificada.</p></li>
+<li><p>Acontece que as <code>strings</code> já possuem, de forma nativa, a capacidade de remover espaços em branco.</p></li>
+<li><p>Ao utilizar o método <code>strip</code> na variável nome (por exemplo, <code>nome = nome.strip()</code>), você removerá qualquer espaço em branco à esquerda e à direita da entrada do usuário.</p></li>
+<li><p>Um método é em essência uma sequência de instruções encapsuladas dentro de um único comando que recebe argumentos e devolve um valor.</p></li>
+<li><p>Você pode modificar seu código para:</p></li>
+<li><p>Ao executar este programa novamente, independentemente de quantos espaços você digitar antes ou depois do nome, ele removerá (<code>strip</code>) todo o espaço em branco.</p></li>
+<li><p>Usando o método <code>title</code>, o nome do usuário ficaria com as iniciais em maiúsculo (formato de título):</p></li>
+<li><p>Observe que você pode modificar seu código para ser mais eficiente:</p></li>
+<li><p>Nós poderíamos ir ainda mais longe!</p></li>
+<li><p>Além do <code>strip()</code> e <code>title()</code>, você usará frequentemente outros métodos para normalizar dados.</p></li>
+<li><p>Por exemplo, converter todos os caracteres para maiúsculas ou minúsculas (<code>upper()</code> e <code>lower()</code>).</p></li>
+<li><p>Úteis para comparar textos sem se preocupar se o usuário digitou em maiúsculas ou minúsculas.</p></li>
+<li><p><code>upper()</code>: Transforma toda a string em MAIÚSCULAS.</p></li>
+<li><p><code>lower()</code>: Transforma toda a string em minúsculas.</p></li>
+<li><p>Dividir uma string em partes menores (<code>split()</code>).</p></li>
+<li><p>Esse método “quebra” a string sempre que encontra o delimitador especificado e retorna uma lista contendo os trechos resultantes.</p></li>
+<li><p>No exemplo a seguir, o espaço <code>" "</code> é utilizado como critério de separação.</p></li>
+<li><p>Substituir todas as ocorrências de um trecho de texto por outro (<code>replace()</code>).</p></li>
+<li><p>Você pode aprender mais sobre strings e seus métodos na documentação oficial do Python sobre o tipo <a href="https://docs.python.org/3/library/stdtypes.html#str">str</a></p></li>
+</ul>
+</section>
+</section>
+<section id="inteiros-int" class="level2">
+<h2 class="anchored" data-anchor-id="inteiros-int">Inteiros (int) <a id="inteiros"></a></h2>
+<ul>
+<li><p>No Python, um número inteiro é conhecido como um <code>int</code>.</p></li>
+<li><p>No mundo da matemática, estamos familiarizados com os operadores <code>+, -, *, / e %</code>.</p></li>
+<li><p>Esse último operador, <code>%</code> ou módulo, pode não ser muito familiar para você.</p></li>
+<li><p>Primeiro, podemos declarar algumas variáveis:</p></li>
+<li><p>Naturalmente, quando executamos o programa, obtemos o resultado 3 na janela do terminal.</p></li>
+<li><p>Podemos tornar isso mais interativo usando a função <code>input</code>.</p></li>
+<li><p>Ao executar este programa, descobrimos que a saída está incorreta. Por que isso acontece?</p></li>
+<li><p>Anteriormente, vimos como o sinal de <code>+</code> concatena (junta) duas strings. Como a entrada do seu teclado chega ao interpretador como texto, ela é tratada como uma string.</p></li>
+<li><p>Portanto, precisamos converter essa entrada de uma string para um inteiro. Podemos fazer isso da seguinte forma:</p></li>
+<li><p>O resultado agora está correto. O uso de <code>int(x)</code> é chamado de “<em>casting</em>” (conversão de tipo), onde um valor é temporariamente alterado de um tipo de variável (neste caso, uma string) para outro (aqui, um inteiro).</p></li>
+<li><p>Podemos melhorar ainda mais nosso programa da seguinte forma:</p></li>
+<li><p>Isso ilustra que você pode executar funções dentro de funções. A função interna (<em>inner function</em>) é executada primeiro e, depois, a externa (<em>outer function</em>).</p></li>
+<li><p>Primeiro, a função <code>input</code> é executada. Em seguida, a função <code>int</code>.</p></li>
+<li><p>Você pode aprender mais na documentação do Python sobre o <code>int</code>.</p></li>
+</ul>
+</section>
+<section id="floats-pontos-flutuantes" class="level2">
+<h2 class="anchored" data-anchor-id="floats-pontos-flutuantes">Floats (Pontos Flutuantes) <a id="float"></a></h2>
+<ul>
+<li><p>Um valor de ponto flutuante é um número real que possui um ponto decimal, como 0.52.</p></li>
+<li><p>Você pode alterar seu código para suportar floats da seguinte forma:</p></li>
+<li><p>Essa mudança permite que seu usuário digite 1.2 e 3.4 para apresentar um total de 4.6.</p></li>
+<li><p>Imaginemos, entretanto, que você queira arredondar o total para o número inteiro mais próximo. Olhando a documentação do Python para <code>round</code>, você verá que os argumentos disponíveis são <code>round(number[, ndigits])</code>.</p></li>
+<li><p>Esses colchetes indicam que algo <strong>opcional</strong> pode ser especificado pelo programador.</p></li>
+<li><p>Portanto, você poderia fazer <code>round(n)</code> para arredondar um dígito para o inteiro mais próximo.</p></li>
+<li><p>Alternativamente, você poderia codificar da seguinte forma:</p></li>
+<li><p>A saída será arredondada para o número inteiro mais próximo.</p></li>
+<li><p>E se quiséssemos formatar a saída de números longos? Por exemplo, em vez de ver 1000, você pode desejar ver 1,000.</p></li>
+<li><p>Você poderia modificar seu código assim:</p></li>
+<li><p>Embora pareça enigmático, esse <code>print(f"{z:,}")</code> cria um cenário onde o z exibido incluirá vírgulas (separador de milhar), resultando em algo como 1,000 ou 2,500.</p></li>
+</ul>
+<section id="mais-sobre-floats" class="level3">
+<h3 class="anchored" data-anchor-id="mais-sobre-floats">Mais sobre floats <a id="mais-sobre-floats"></a></h3>
+<ul>
+<li><p>Como podemos arredondar valores de ponto flutuante?</p></li>
+<li><p>Primeiro, modifique seu código:</p></li>
+<li><p>Ao inserir 2 como x e 3 como y, o resultado z é 0.6666666666, parecendo ir ao infinito como poderíamos esperar.</p></li>
+<li><p>Imaginemos que queremos arredondar isso. Poderíamos modificar nosso código:</p></li>
+<li><p>Como esperado, isso arredondará o resultado para as duas casas decimais mais próximas.</p></li>
+<li><p>Também poderíamos usar uma <code>f-string</code> para formatar a saída da seguinte forma:</p></li>
+<li><p>Você pode aprender mais na documentação do Python sobre <a href="https://docs.python.org/3/library/functions.html#float">float</a>.</p></li>
+</ul>
+</section>
+</section>
+<section id="booleanos" class="level2">
+<h2 class="anchored" data-anchor-id="booleanos">Booleanos <a id="booleanos"></a></h2>
+<ul>
+<li>Em Python, um booleano representa um de dois valores: <code>True</code> (Verdadeiro) ou <code>False</code> (Falso).</li>
+<li>Diferente de strings, eles não levam aspas e devem sempre começar com letra maiúscula.</li>
+<li><code>True</code> pode ser convertido automaticamente para 1; <code>False</code> para 0.</li>
+<li>Isso pode ser muito conveniente, por exemplo, ao contar valores verdadeiros ou falsos nas colunas de uma tabela de dados.</li>
+</ul>
+</section>
+<section id="explorando-o-python" class="level2">
+<h2 class="anchored" data-anchor-id="explorando-o-python">Explorando o Python <a id="explorando-python"></a></h2>
+<ul>
+<li>Além de consultar a documentação online, você pode usar funções nativas para descobrir o que cada tipo de dado é capaz de fazer.</li>
+</ul>
+<section id="função-dir" class="level3">
+<h3 class="anchored" data-anchor-id="função-dir">Função dir() <a id="funcao-dir"></a></h3>
+<ul>
+<li>A função <code>dir</code> funciona como um “mapa”. Ela lista todos os métodos e atributos disponíveis para um objeto ou tipo de dado.</li>
+<li>Se você quiser saber tudo o que pode fazer com uma string, basta digitar: <code>dir(str)</code>.</li>
+<li>Isso retornará uma lista gigante contendo nomes como <code>strip</code>, <code>title</code>, <code>lower</code>, <code>upper</code>, entre outros. É a forma mais rápida de verificar: “Será que existe um método para isso?”.</li>
+</ul>
+</section>
+<section id="função-help" class="level3">
+<h3 class="anchored" data-anchor-id="função-help">Função help() <a id="funcao-help"></a></h3>
+<ul>
+<li>Enquanto o <code>dir</code> diz o que existe, o <code>help</code> explica o que cada coisa faz.</li>
+<li>Se você esqueceu como usar o <code>strip</code>, por exemplo, pode chamar a ajuda interativa: <code>help(str.strip)</code>.</li>
+<li>O interpretador exibirá uma breve explicação técnica sobre como o método funciona, quais argumentos ele aceita e o que ele retorna.</li>
+</ul>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
