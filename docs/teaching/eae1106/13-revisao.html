@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revisão – EAE1106 Métodos Computacionais</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-sans, system-ui, sans-serif);
+      background: #f8f9fa;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px #0001;
+      padding: 2.5rem 2rem;
+    }
+
+    .header h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #1d3557;
+      margin-bottom: 0.5rem;
+    }
+
+    .header p {
+      font-size: 1.1rem;
+      color: #495057;
+    }
+
+    .progress-bar {
+      background: #e9ecef;
+      border-radius: 99px;
+      height: 8px;
+      margin: 1.5rem 0 0.5rem 0;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: #1D9E75;
+      border-radius: 99px;
+      transition: width 0.4s;
+    }
+
+    .progress-label {
+      font-size: 0.95rem;
+      color: #6c757d;
+      text-align: right;
+    }
+
+    .nav {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-btn {
+      font-size: 0.95rem;
+      padding: 6px 18px;
+      border-radius: 99px;
+      border: 1px solid #ced4da;
+      background: #f8f9fa;
+      color: #495057;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .nav-btn.active,
+    .nav-btn:focus {
+      background: #1D9E75;
+      color: #fff;
+      border-color: #1D9E75;
+    }
+
+    .nav-btn:hover:not(.active) {
+      background: #e9ecef;
+    }
+
+    .exercise-card {
+      background: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 1px 4px #0001;
+    }
+
+    .exercise-card.done {
+      border-left: 4px solid #1D9E75;
+    }
+
+    .exercise-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 1rem;
+    }
+
+    .badge {
+      font-size: 0.85rem;
+      padding: 3px 12px;
+      border-radius: 99px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .badge-topico {
+      background: #E1F5EE;
+      color: #0F6E56;
+    }
+
+    .badge-dificil {
+      background: #FAECE7;
+      color: #993C1D;
+    }
+
+    .badge-medio {
+      background: #FAEEDA;
+      color: #854F0B;
+    }
+
+    .badge-facil {
+      background: #EAF3DE;
+      color: #3B6D11;
+    }
+
+    .exercise-title {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #1d3557;
+      line-height: 1.5;
+      flex: 1;
+    }
+
+    .exercise-body {
+      font-size: 1rem;
+      color: #495057;
+      line-height: 1.7;
+    }
+
+    .exercise-body strong {
+      color: #1d3557;
+      font-weight: 500;
+    }
+
+    .exercise-body code {
+      font-family: monospace !important;
+      background: #f3f3f3 !important;
+      padding: 2px 6px !important;
+      border-radius: 4px !important;
+      font-size: 13px !important;
+      color: #1d3557 !important;
+    }
+
+    pre {
+      background: #e9ecef;
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      margin: 0.75rem 0;
+      font-size: 0.98rem;
+      font-family: var(--bs-font-monospace, monospace);
+      color: #212529;
+      overflow-x: auto;
+      white-space: pre;
+    }
+
+    .hint-btn {
+      font-size: 1rem;
+      color: #0F6E56;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 6px 0;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-top: 0.75rem;
+    }
+
+    .hint-btn:hover {
+      text-decoration: underline;
+    }
+
+    .hint-box {
+      background: #e9ecef;
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      margin-top: 0.5rem;
+      font-size: 0.98rem;
+      color: #495057;
+      line-height: 1.6;
+      display: none;
+    }
+
+    .hint-box.open {
+      display: block;
+    }
+
+    .hint-box code {
+      font-family: var(--bs-font-monospace, monospace);
+      background: #fff;
+      border: 1px solid #e9ecef;
+      padding: 1px 5px;
+      border-radius: 4px;
+      font-size: 0.95rem;
+    }
+
+    .done-btn {
+      font-size: 1rem;
+      padding: 6px 18px;
+      border-radius: 8px;
+      border: 1px solid #ced4da;
+      background: #fff;
+      color: #495057;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: all 0.15s;
+    }
+
+    .done-btn.checked {
+      background: #E1F5EE;
+      color: #0F6E56;
+      border-color: #1D9E75;
+    }
+
+    .done-btn:hover:not(.checked) {
+      background: #e9ecef;
+    }
+
+    .section-title {
+      font-size: 0.98rem;
+      font-weight: 600;
+      color: #6c757d;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin: 2rem 0 1rem;
+    }
+
+    .sendprompt-btn {
+      font-size: 1rem;
+      padding: 7px 16px;
+      border-radius: 8px;
+      border: 1px solid #ced4da;
+      background: #fff;
+      color: #1d3557;
+      cursor: pointer;
+      margin-top: 0.75rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s;
+    }
+
+    .sendprompt-btn:hover {
+      background: #e9ecef;
+    }
+
+    .summary {
+      background: #e9ecef;
+      border-radius: 12px;
+      padding: 1.5rem 2rem;
+      margin-top: 2rem;
+    }
+
+    .summary p {
+      font-size: 1rem;
+      color: #495057;
+      margin-bottom: 8px;
+    }
+
+    .summary .score {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #1d3557;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>EAE1106 Métodos Computacionais - Exercícios de Revisão</h1>
+      <p>Exercícios de Revisão - resolva no seu ambiente Python</p>
+      <div class="progress-bar">
+        <div class="progress-fill" id="prog-fill" style="width:0%"></div>
+      </div>
+      <p class="progress-label"><span id="prog-count">0</span> de 20 concluídos</p>
+    </div>
+    <div class="nav">
+      <button class="nav-btn active" onclick="filterSection('all')">Todos</button>
+      <button class="nav-btn" onclick="filterSection('tipos')">Tipos de dados</button>
+      <button class="nav-btn" onclick="filterSection('fluxo')">Controle de fluxo</button>
+      <button class="nav-btn" onclick="filterSection('iter')">Iteração</button>
+      <button class="nav-btn" onclick="filterSection('func')">Funções</button>
+      <button class="nav-btn" onclick="filterSection('exc')">Exceções</button>
+      <button class="nav-btn" onclick="filterSection('regex')">Regex</button>
+    </div>
+    <div id="exercises-container"></div>
+    <div class="summary" id="summary" style="display:none">
+      <p>Parabéns! Você completou todos os exercícios.</p>
+      <div class="score" id="final-score"></div>
+      <button class="sendprompt-btn"
+        onclick="sendPrompt('Quero ver a solução de todos os exercícios de revisão do EAE1106')">Ver gabarito comentado
+        ↗</button>
+    </div>
+  </div>
+  <script>
+    // (Cole aqui o JS completo dos exercícios, igual ao arquivo original funcional)
+    // ...
+  </script>
+</body>
+
+</html>
+<script>
+  const exercises = [
+    {
+      id: 1, section: 'tipos', diff: 'facil',
+      title: 'Calculadora de variação do PIB',
+      body: `O PIB do Brasil foi R$ 10,9 trilhões em 2023 e R$ 11,7 trilhões em 2024. Escreva um programa que armazene esses valores como float, calcule a variação percentual e imprima o resultado formatado com duas casas decimais usando f-string.\n\nSaída esperada:\n
+    PIB 2023: R$ 10.90 trilhões\nPIB 2024: R$ 11.70 trilhões\nVariação: 7.34%`,
+      hint: `Use a fórmula 'variacao = (pib_2024 - pib_2023) / pib_2023 * 100'. Na f-string, formate com '{variacao:.2f}'.`
+    },
+    {
+      id: 2, section: 'tipos', diff: 'facil',
+      title: 'Ficha do economista — strings e f-strings',
+      body: `Crie variáveis para armazenar nome, instituição e área de pesquisa de um economista famoso (ex: 'Adam Smith', 'University of Glasgow', 'Teoria do Valor'). Monte e imprima uma ficha formatada usando f-string, aplicando os métodos .upper() no nome e .title() na área de pesquisa.`,
+      hint: `Exemplo de uso: nome.upper() transforma 'Adam Smith' em 'ADAM SMITH'. Combine com f-string: f"Economista: {nome.upper()}".`
+    },
+    {
+      id: 3, section: 'tipos', diff: 'facil',
+      title: 'Separando código e nome de ativo',
+      body: `Uma string contém informações de um ativo financeiro no formato 'PETR4 - Petrobras PN'. Escreva um programa que extraia automaticamente:\n- O código do ativo (primeiros 5 caracteres) via slicing\n- O nome da empresa via .split() e indexação\n\nImpressão esperada:\n Código: PETR4\nEmpresa: Petrobras PN`,
+      hint: `Use 'ativo[:5]' para o código. Para o nome, use 'ativo.split(" - ")' e acesse o índice [1].`
+    },
+    {
+      id: 4, section: 'tipos', diff: 'medio',
+      title: 'Catálogo de indicadores econômicos com dicionário',
+      body: `Crie um dicionário chamado 'indicadores' com as seguintes chaves e valores:\n {"IPCA": 4.83, "SELIC": 13.75, "CAMBIO": 5.71, "DESEMPREGO": 6.2}\nEscreva um programa que:\n1. Acesse e imprima cada indicador com .items()\n2. Adicione o indicador 'IGP-M': 6.54\n3. Atualize a SELIC para 14.25\n4. Imprima as chaves disponíveis com .keys()`,
+      hint: `Itere com 'for chave, valor in indicadores.items()'. Para adicionar: 'indicadores["IGP-M"] = 6.54'. Para atualizar: 'indicadores["SELIC"] = 14.25'.`
+    },
+    {
+      id: 5, section: 'tipos', diff: 'medio',
+      title: 'Portfólio de ativos — listas e operações',
+      body: `Crie uma lista 'portfolio' com os tickers: ["PETR4", "VALE3", "ITUB4", "BBDC4", "WEGE3"].\nEscreva um programa que:\n1. Imprima o número de ativos com len()\n2. Adicione 'MGLU3' ao final\n3. Remova 'BBDC4'\n4. Imprima os 3 primeiros ativos via slicing\n5. Inverta a lista com .reverse() e imprima`,
+      hint: `Use 'portfolio.append("MGLU3")', 'portfolio.remove("BBDC4")' e 'portfolio[:3]' para o slicing.`
+    },
+    {
+      id: 6, section: 'tipos', diff: 'dificil',
+      title: 'Dados de pesquisa — tuplas, zip e desempacotamento',
+      body: `Você tem duas listas de uma pesquisa sobre renda e consumo:\nrenda  = [2000, 3500, 5000, 8000, 15000]\nconsumo = [1800, 3000, 4100, 6200, 10500]\nUse zip() para combinar as listas e imprima cada par desempacotado. Para cada observação, calcule e imprima a propensão marginal a consumir (consumo/renda) com 2 casas decimais.`,
+      hint: `for r, c in zip(renda, consumo): desempacota cada par. A propensão marginal é c/r.
+Formate com f"{c/r:.2f}".`
+    },
+    {
+      id: 7, section: 'fluxo', diff: 'facil',
+      title: 'Classificador de risco de crédito',
+      body: `Escreva um programa que leia um score de crédito (0–1000) e classifique o cliente conforme a tabela:\n 800–1000 → Excelente\n600–799  → Bom\n400–599  → Regular\n0–399 → Ruim\nUse if/elif/else. Teste com os valores 920, 650, 480 e 300.`,
+      hint: `Comece com if score >= 800:. Como os elif só executam se o if anterior for falso, você pode simplificar para elif score >= 600: sem precisar repetir o limite superior.`
+    },
+    {
+      id: 8, section: 'fluxo', diff: 'medio',
+      title: 'Cálculo do imposto de renda (tabela progressiva)',
+      body: `Implemente o cálculo do IRPF mensal usando if/elif/else com as faixas abaixo:\n Até R$ 2.428,80  → isento\nR$ 2.428,81–2.826,65 → 7,5%\nR$ 2.826,66–3.751,05 → 15%\nR$ 3.751,06–4.664,68 → 22,5%\nAcima de R$ 4.664,68 → 27,5% \nO programa deve receber o salário bruto e imprimir a alíquota aplicável e o imposto estimado (alíquota × salário). Teste com R$ 2.000, R$ 3.200 e R$ 6.000.`,
+      hint: `Use condicionais encadeados. Lembre que com elif salario <= 2826.65: você não precisa verificar o limite inferior novamente, pois se chegou aqui, o if anterior já foi falso.`
+    },
+    {
+      id: 9, section: 'iter', diff: 'facil',
+      title: 'Juros compostos mês a mês com for',
+      body: `Dada uma aplicação inicial de R$ 10.000 com taxa mensal de 0,8%, use um laço for range(12) para simular a evolução do capital mês a mês, imprimindo o saldo ao final de cada mês.\n\nFormato esperado:\n Mês 1: R$ 10.080,00\nMês 2: R$ 10.160,64\n...`,
+      hint: `Inicialize capital = 10000 fora do laço. Dentro do for, atualize:
+capital = capital * (1 + 0.008). Use f"Mês {i+1}: R$ {capital:,.2f}".`
+    },
+    {
+      id: 10, section: 'iter', diff: 'medio',
+      title: 'Análise de série histórica com while e acumuladores',
+      body: `Você recebeu as variações mensais do IPCA em 2024:\n ipca = [0.42, 0.83, 0.16, 0.38, 0.44, 0.50, 0.38, 0.44, 0.44, 0.56, 0.39, 0.52]\nUsando um laço while, calcule:\n1. A inflação acumulada no ano (produto de (1 + taxa/100))\n2. O número de meses com inflação acima de 0,45%\nImprima os resultados ao final.`,
+      hint: `Inicie acumulada = 1 e <code>i = 0. Dentro do while, faça
+acumulada *= (1 + ipca[i]/100). A inflação acumulada final é (acumulada - 1) * 100.`
+    },
+    {
+      id: 11, section: 'func', diff: 'medio',
+      title: 'Função: calcular VPL de projeto',
+      body: `Escreva uma função calcular_vpl(fluxos, taxa) que receba uma lista de fluxos de caixa futuros e uma taxa de desconto, e retorne o Valor Presente Líquido:\n\n$$VPL = \\sum_{t=1}^{n} \\frac{FC_t}{(1+i)^t}$$\n\nTeste com fluxos = [1000, 2000, 3000, 4000] e taxa = 0.10.\nA função deve retornar o VPL e imprimir o resultado formatado.`,
+      hint: `Use for t, fc in enumerate(fluxos, start=1): para iterar com índice. O VP de cada fluxo é fc / (1 + taxa) ** t. Acumule numa variável vpl inicializada em 0.`
+    },
+    {
+      id: 12, section: 'func', diff: 'dificil',
+      title: 'Função com múltiplos retornos: estatísticas de renda',
+      body: `Escreva uma função estatisticas_renda(rendas) que receba uma lista de rendas e retorne um dicionário com:\n- "media": média aritmética\n- "mediana": valor central (ordene a lista!)\n- "gini_approx": aproximação do índice de Gini usando a fórmula simplificada\n\nUse <strong>apenas Python puro</strong> (sem bibliotecas). Teste com:\n rendas = [1200, 1800, 2500, 3000, 4500, 8000, 15000, 32000]\nImprima cada métrica com 2 casas decimais.`,
+      hint: `Média: sum(rendas)/len(rendas). Mediana: ordene com sorted(), pegue o elemento central. Para o Gini simplificado: gini = (2 * sum((i+1)*x for i,x in enumerate(sorted(rendas))) / (n * sum(rendas))) - (n+1)/n.`
+    },
+    {
+      id: 13, section: 'fluxo', diff: 'medio',
+      title: 'Aprovação de empréstimo com operadores lógicos',
+      body: `Uma instituição financeira aprova empréstimos com base em três critérios: renda mensal, score de crédito e comprometimento da renda. Considere os dados abaixo:
+      renda = 5200
+score = 730
+comprometimento = 0.28
+Escreva um programa que aprove o crédito apenas se a renda for maior ou igual a R$ 4.000, o score for maior ou igual a 700 e o comprometimento for menor ou igual a 30%. Caso contrário, imprima a mensagem de recusa indicando qual critério falhou.`,
+      hint: `Use and para combinar as condições. Você pode testar cada critério separadamente para montar uma mensagem mais informativa na saída.`
+    },
+    {
+      id: 14, section: 'fluxo', diff: 'dificil',
+      title: 'Desconto progressivo em compras',
+      body: `Crie um programa que leia o valor total de uma compra e aplique o desconto correto:
+Até R$ 100      → sem desconto
+De R$ 100,01 a 300 → 5%
+De R$ 300,01 a 600 → 10%
+Acima de R$ 600  → 15%
+Depois de calcular o desconto, imprima o valor original, o percentual aplicado, o valor do desconto e o valor final.`,
+      hint: `Organize as faixas com if/elif/else. Guarde a alíquota em uma variável e reutilize-a no cálculo final.`
+    },
+    {
+      id: 15, section: 'iter', diff: 'medio',
+      title: 'Tabuada de juros com for aninhado',
+      body: `Monte uma tabela com os montantes futuros para aportes de R$ 1000, R$ 2000 e R$ 3000 em taxas mensais de 0,5%, 1% e 1,5%. Use for aninhado para imprimir todas as combinações em uma tabela organizada.
+
+Formato esperado:
+Aporte  Taxa  Montante
+1000    0.5%  ...`,
+      hint: `Use dois laços for: um para os aportes e outro para as taxas. O montante pode ser calculado com aporte * (1 + taxa).`
+    },
+    {
+      id: 16, section: 'iter', diff: 'dificil',
+      title: 'Leitura de série com while, break e continue',
+      body: `Você recebeu uma lista de variações diárias do dólar, mas alguns valores estão ausentes ou inválidos:
+variacoes = [0.3, 0.1, None, 0.5, -0.2, 'x', 0.4, 0.0]
+Use um laço while para percorrer a lista. Ignore valores None e textos com
+continue, interrompa a leitura com break caso encontre uma string igual a 'x', e
+calcule a soma das variações válidas até esse ponto.`,
+      hint: `Valide o tipo de cada elemento antes de somar. continue pula para a próxima iteração;
+break encerra o laço imediatamente.`
+    },
+    {
+      id: 17, section: 'func', diff: 'medio',
+      title: 'Função para converter taxa anual em mensal',
+      body: `Crie uma função taxa_mensal(taxa_anual) que receba uma taxa anual em formato decimal (por exemplo, 0.12 para 12%) e retorne a taxa mensal equivalente usando capitalização composta. Em seguida, teste a função com taxa_anual = 0.12 e imprima o resultado com 4 casas decimais.`,
+      hint: `Use a fórmula (1 + taxa_anual) ** (1/12) - 1.`
+    },
+    {
+      id: 18, section: 'func', diff: 'dificil',
+      title: 'Função com parâmetros opcionais: média ponderada',
+      body: `Escreva uma função media_ponderada(valores, pesos=None) que calcule a média ponderada. Se a lista de pesos não for informada, a função deve usar pesos iguais.
+
+Teste com:
+valores = [7, 8, 9]
+pesos = [2, 3, 5]
+Depois teste novamente sem passar pesos.`,
+      hint: `Se pesos for None, crie uma lista de 1s com o mesmo tamanho de valores. A média é sum(v * p for v, p in zip(valores, pesos)) / sum(pesos).`
+    },
+    {
+      id: 19, section: 'exc', diff: 'medio',
+      title: 'Tratamento de exceções na conversão de entrada',
+      body: `Escreva um programa que tente converter a entrada do usuário para float e calcule a taxa de
+crescimento entre dois valores. Trate os erros com try/except para os seguintes casos:
+- ValueError, quando o texto não for numérico
+- ZeroDivisionError, quando o valor inicial for zero
+- um bloco finally para exibir uma mensagem final
+
+Teste com entradas válidas e inválidas.`,
+      hint: `Separe a leitura da conversão em um bloco try. No except ValueError, mostre uma mensagem amigável; no except ZeroDivisionError, explique que a taxa não pode ser calculada.`
+    },
+    {
+      id: 20, section: 'regex', diff: 'dificil',
+      title: 'Extração de dados econômicos com regex',
+      body: `Considere o texto abaixo:
+"Em 2024, a inflação foi de 4,83%, o câmbio fechou em R$ 5,71 e o desemprego ficou em 6.2%."
+Use o módulo re para extrair:
+1. Todos os percentuais do texto
+2. O valor do câmbio em reais
+3. O ano mencionado
+
+Imprima cada extração em listas separadas.`,
+      hint: `Experimente padrões como r'\d+[\.,]?\d*%' para percentuais, r'R\$\s*\d+[\.,]\d+' para valores monetários e r'\b\d{4}\b' para o ano.`
+    }
+  ];
+
+  let done = new Set();
+
+
+  function renderExercises(filter = 'all') {
+    const container = document.getElementById('exercises-container');
+    container.innerHTML = '';
+    const sections = {
+      tipos: 'Tipos de dados & estruturas',
+      fluxo: 'Controle de fluxo',
+      iter: 'Iteração (for / while)',
+      func: 'Funções',
+      exc: 'Exceções',
+      regex: 'Regex'
+    };
+    const shown = filter === 'all' ? exercises : exercises.filter(e => e.section === filter);
+    let lastSection = null;
+    shown.forEach(ex => {
+      if (filter === 'all' && ex.section !== lastSection) {
+        const st = document.createElement('p');
+        st.className = 'section-title';
+        st.textContent = sections[ex.section];
+        container.appendChild(st);
+        lastSection = ex.section;
+      }
+      const card = document.createElement('div');
+      card.className = 'exercise-card' + (done.has(ex.id) ? ' done' : '');
+      card.id = 'card-' + ex.id;
+
+      const hintId = 'hint-' + ex.id;
+      card.innerHTML = `
+<div class="exercise-header">
+  <div>
+    <span class="badge badge-topico">${{
+          tipos: 'Tipos', fluxo: 'Fluxo', iter: 'Iteração', func: 'Funções', exc:
+            'Exceções', regex: 'Regex'
+        }[ex.section]}</span>
+  </div>
+  <p class="exercise-title">Exercício ${ex.id} — ${ex.title}</p>
+  <span class="badge badge-${ex.diff}">${{ facil: 'Fácil', medio: 'Médio', dificil: 'Difícil' }[ex.diff]}</span>
+</div>
+<div class="exercise-body">${ex.body.replace(/\n/g, '<br>').replace(/<code>/g, '<code style=\"font-family:var(--font-mono);background:var(--color-background-secondary);padding:1px 5px;border-radius:4px;font-size:13px;\"]').replace(/<pre>/g, '<pre style=\"background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:0.75rem 1rem;margin:0.75rem 0;font-size:13px;font-family:var(--font-mono);overflow-x:auto;white-space:pre;\"}')}</div>
+      <button class="hint-btn" onclick="toggleHint('${hintId}')">💡 Ver dica</button>
+      <div class="hint-box" id="${hintId}">${ex.hint}</div>
+      <button class="done-btn${done.has(ex.id) ? ' checked' : ''}" onclick="markDone(${ex.id}, this)">${done.has(ex.id) ? '✓ Concluído' : 'Marcar como feito'}</button>
+    `;
+      container.appendChild(card);
+    });
+  }
+
+  function toggleHint(id) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.classList.toggle('open');
+    }
+  }
+
+  function markDone(id, btn) {
+    if (done.has(id)) {
+      done.delete(id);
+      btn.textContent = 'Marcar como feito';
+      btn.classList.remove('checked');
+      document.getElementById('card-' + id).classList.remove('done');
+    } else {
+      done.add(id);
+      btn.textContent = '✓ Concluído';
+      btn.classList.add('checked');
+      document.getElementById('card-' + id).classList.add('done');
+    }
+    updateProgress();
+  }
+
+  function updateProgress() {
+    const count = done.size;
+    const pct = (count / exercises.length) * 100;
+    document.getElementById('prog-fill').style.width = pct + '%';
+    document.getElementById('prog-count').textContent = count;
+    const summary = document.getElementById('summary');
+    if (count === exercises.length) {
+      summary.style.display = 'block';
+      document.getElementById('final-score').textContent = `${done.size}/${exercises.length} exercícios ✓`;
+    } else {
+      summary.style.display = 'none';
+    }
+  }
+
+  function filterSection(s) {
+    document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+    event.target.classList.add('active');
+    renderExercises(s);
+  }
+
+  renderExercises();
+</script>
