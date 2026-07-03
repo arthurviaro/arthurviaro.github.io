@@ -1,0 +1,140 @@
+/* ==========================================================================
+   GLOBAL TYPOGRAPHY & BODY RESET
+   ========================================================================== */
+
+/* Master Link Behavior (Clean Muted Dark Blue Accent) */
+a {
+  color: #1a3a6f;
+  text-decoration: none;
+  transition: color 0.12s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0f2547;
+}
+
+/* ==========================================================================
+   NAVIGATION BAR (CLEAN & SHARP)
+   ========================================================================== */
+.navbar {
+  border-bottom: 1px solid #eaeaea !important;
+  background-color: #ffffff !important;
+}
+
+.nav-link:hover, .nav-item.active .nav-link {
+  color: #1a3a6f !important;
+  text-decoration: none !important;
+}
+
+/* ==========================================================================
+   RESEARCH ENTRIES LAYOUT
+   ========================================================================== */
+.research-item {
+  margin-bottom: 2rem; /* Clean vertical breathing room between entries */
+}
+
+/* Paper Titles (Elegant High-Contrast Deep Navy Blue) */
+.paper-title {
+  font-size: 1.15rem;
+  margin-bottom: 0.25rem;
+}
+
+.paper-title a {
+  text-decoration: none;
+  color: #1a3a6f;
+  transition: color 0.15s ease;
+}
+
+.paper-title a:hover {
+  text-decoration: underline;
+  color: #0f2547;
+}
+
+/* Co-authors Line */
+.coauthors {
+  font-size: 0.9rem;
+  color: #555555;
+  margin-bottom: 0.15rem;
+}
+
+.coauthors a {
+  color: inherit; 
+  text-decoration: none;
+}
+
+.coauthors a:hover {
+  color: #1a3a6f;
+  text-decoration: underline;
+}
+
+/* Journal Status Line (Muted Grey, Italicized) */
+.status {
+  font-size: 0.9rem;
+  color: #666666;
+  font-style: italic;
+  margin-bottom: 0.45rem;
+}
+
+/* ==========================================================================
+   INLINE ACTIONS BAR ([Abstract] | [Replication code])
+   ========================================================================== */
+.research-details-block {
+  margin-top: 0.35rem;
+}
+
+/* Safely formats cross-browser details disclosure tags */
+.research-details-block summary::-webkit-details-marker,
+.research-details-block summary::marker,
+.research-details-block summary::before,
+.research-details-block summary::after {
+  display: none !important;
+  content: "" !important;
+}
+
+/* Aligns everything smoothly on a single line block */
+.action-row {
+  display: block; 
+  list-style: none;
+  font-size: 0.9rem;
+  user-select: none;
+}
+
+/* Action Links Standard Look (Clean Muted Charcoal, No Underlines) */
+.action-link {
+  color: #6c757d;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: color 0.12s ease;
+}
+
+.action-link:hover {
+  color: #1a3a6f;
+  text-decoration: underline;
+}
+
+/* Static Structural Pipeline Splitter (|) */
+.action-separator {
+  color: #cccccc;
+  margin: 0 0.45rem;
+  cursor: default;
+  display: inline-block;
+}
+
+/* ==========================================================================
+   ABSTRACT EXPANSE DROPDOWN PANEL (STABLE WRAPPING & JUSTIFICATION)
+   ========================================================================== */
+.abstract-text {
+  display: block;             /* Drops down completely beneath the link bar */
+  clear: both;                /* Insulates against horizontal grid distortions */
+  white-space: normal;        /* Breaks line width calculations completely */
+  font-size: 0.9rem;
+  color: #444444;
+  line-height: 1.65;          /* Spacious academic line height */
+  margin-top: 0.65rem;
+  max-width: 100%;       
+  text-align: justify;        /* Beautiful straight alignment margin */
+  text-justify: inter-word;
+  hyphens: auto;
+}
