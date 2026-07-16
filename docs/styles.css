@@ -31,7 +31,25 @@ a:hover {
    RESEARCH ENTRIES LAYOUT
    ========================================================================== */
 .research-item {
-  margin-bottom: 2rem; /* Clean vertical breathing room between entries */
+  margin-bottom: 1rem; /* Clean vertical breathing room between entries */
+}
+
+.research-item ul {
+  padding-left: 0 !important;
+  margin-left: 0.6em !important;
+}
+
+.research-item li {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  margin-bottom: 1rem; /* Vertical spacing between papers */
+}
+
+/* Ensure the inline elements wrap and behave like block elements */
+.research-item .paper-title,
+.research-item .coauthors,
+.research-item .status {
+  display: block; 
 }
 
 /* Paper Titles (Elegant High-Contrast Deep Navy Blue) */
@@ -103,6 +121,7 @@ a:hover {
 /* Action Links Standard Look (Clean Muted Charcoal, No Underlines) */
 .action-link {
   color: #6c757d;
+  font-size: 0.9rem;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -126,15 +145,15 @@ a:hover {
    ABSTRACT EXPANSE DROPDOWN PANEL (STABLE WRAPPING & JUSTIFICATION)
    ========================================================================== */
 .abstract-text {
-  display: block;             /* Drops down completely beneath the link bar */
-  clear: both;                /* Insulates against horizontal grid distortions */
-  white-space: normal;        /* Breaks line width calculations completely */
+  display: block;            /* Drops down completely beneath the link bar */
+  clear: both;               /* Insulates against horizontal grid distortions */
+  white-space: normal;       /* Breaks line width calculations completely */
   font-size: 0.9rem;
   color: #444444;
-  line-height: 1.65;          /* Spacious academic line height */
+  line-height: 1.65;         /* Spacious academic line height */
   margin-top: 0.65rem;
   max-width: 100%;       
-  text-align: justify;        /* Beautiful straight alignment margin */
+  text-align: justify;       /* Beautiful straight alignment margin */
   text-justify: inter-word;
   hyphens: auto;
 }
